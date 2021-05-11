@@ -1,0 +1,3221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c6a5787bc83e242a02426d8fdda104, type: 3}
+  m_Name: Project
+  m_EditorClassIdentifier: 
+  ProjectID: 935
+  targetLanguage: 0
+  databases:
+  - databaseName: customer
+    databaseID: 4146yd22w3530m
+    grids:
+    - nameGrid: gametexts
+      gridID: ed1w0n92jey42l
+      viewID: ed1w0n9qewl83l
+      records:
+      - recordID: next
+        pathTag: Chapter 0
+        columns:
+        - columnID: viVN_1
+          text: "ti\u1EBFp"
+        - columnID: enUS_1
+          text: "n\u1EEFa"
+        - columnID: deCH_1
+          text: "N\xE4chster"
+        - columnID: svSE_1
+          text: "N\xE4sta"
+        - columnID: image_1
+          text: 
+        - columnID: image_1
+          text: edwwkwpll3ojo1.png
+        - columnID: image_1
+          text: 
+        - columnID: column7
+          text: ToBeTranslated
+        - columnID: column8
+          text: 
+        - columnID: column9
+          text: this is an important piece of data
+      - recordID: prev
+        pathTag: Chapter 0
+        columns:
+        - columnID: viVN_1
+          text: "h\xF2i n\xE3y"
+        - columnID: enUS_1
+          text: the past
+        - columnID: deCH_1
+          text: Bisherige
+        - columnID: svSE_1
+          text: tidigare
+        - columnID: image_1
+          text: 
+        - columnID: image_1
+          text: edwwkzyd9wj1jo.png
+        - columnID: image_1
+          text: edwwkvd49ymykl.png
+        - columnID: image_1
+          text: 
+        - columnID: column7
+          text: ToBeVerfied
+        - columnID: column8
+          text: 
+        - columnID: column9
+          text: dont give this string for that stupid translator
+      - recordID: cat
+        pathTag: Chapter 1
+        columns:
+        - columnID: viVN_1
+          text: "con m\xE8o"
+        - columnID: enUS_1
+          text: the cat
+        - columnID: deCH_1
+          text: test
+        - columnID: svSE_1
+          text: katten
+        - columnID: image_1
+          text: 
+        - columnID: image_1
+          text: edwwko136xvo11.png
+        - columnID: image_1
+          text: 
+        - columnID: column7
+          text: 
+        - columnID: column8
+          text: 
+        - columnID: column9
+          text: 
+    - nameGrid: ui
+      gridID: ed18kwv89qq6eo
+      viewID: 12ly15pz81o31q
+      records:
+      - recordID: bag
+        pathTag: Bag/UI/bag
+        columns:
+        - columnID: enUS1
+          text: Bag
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 1
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+      - recordID: select
+        pathTag: Bag/UI/Select
+        columns:
+        - columnID: enUS1
+          text: Select
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 1
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+      - recordID: update
+        pathTag: Enchantment/UI
+        columns:
+        - columnID: enUS1
+          text: Update
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 1
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+      - recordID: value
+        pathTag: Enchantment/UI
+        columns:
+        - columnID: enUS1
+          text: Value
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 1
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+      - recordID: mq5x9n0yz4wyl8
+        pathTag: Enchantment/En1
+        columns:
+        - columnID: enUS1
+          text: 'Skill 1: monster explosion '
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 'Des1: After death monsters will create big explosions'
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+      - recordID: ed18yn5e653d3l
+        pathTag: 
+        columns:
+        - columnID: enUS1
+          text: 
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 11
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+      - recordID: 3pzyk6y162x5qz
+        pathTag: 
+        columns:
+        - columnID: enUS1
+          text: 
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 1
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+      - recordID: ly02epk18kdowo
+        pathTag: 
+        columns:
+        - columnID: enUS1
+          text: 
+        - columnID: column2
+          text: 1
+        - columnID: column3
+          text: 11
+        - columnID: column4
+          text: 1
+        - columnID: column5
+          text: 1
+        - columnID: column6
+          text: 1
+  - databaseName: sampleDB
+    databaseID: emm64k8l446eo1
+    grids:
+    - nameGrid: Saga Characters
+      gridID: 1jj4q11mo1jp8d
+      viewID: d551qjjynj5zly
+      records:
+      - recordID: 885bced6ecf94223baad8b6243995a4e
+        pathTag: 
+        columns:
+        - columnID: column8
+          text: 
+        - columnID: column1
+          text: John
+        - columnID: column2
+          text: Male
+        - columnID: column3
+          text: 42
+        - columnID: column4
+          text: Scottish
+        - columnID: column5
+          text: A tall young man (look like John Snow)
+        - columnID: column7
+          text: "Ein gro\xDFer junger Mann (sieht aus wie John Snow)"
+        - columnID: column6
+          text: Paul
+      - recordID: 35553cc6d8ad40208d0e2180c905a4c4
+        pathTag: 
+        columns:
+        - columnID: column8
+          text: 
+        - columnID: column1
+          text: Monkey
+        - columnID: column2
+          text: Animal
+        - columnID: column3
+          text: 12
+        - columnID: column4
+          text: US English
+        - columnID: column5
+          text: "John\u2019s fellow, a powerful but timid monkey "
+        - columnID: column7
+          text: 
+        - columnID: column6
+          text: Ed
+      - recordID: 6db4295068d7414cbebeec983f7981aa
+        pathTag: 
+        columns:
+        - columnID: column8
+          text: 
+        - columnID: column1
+          text: Regina
+        - columnID: column2
+          text: Female
+        - columnID: column3
+          text: 36
+        - columnID: column4
+          text: British
+        - columnID: column5
+          text: An old woman who has a duck lip
+        - columnID: column7
+          text: Eine alte sexy Frau, die eine Entenlippe hat
+        - columnID: column6
+          text: Ross
+    - nameGrid: Saga Dialogues
+      gridID: 20084qqlw3j96l
+      viewID: 6kk280091doy4z
+      records:
+      - recordID: 9e43d0fcea8341bf86fca182f93e3c54
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 'Good morning, gentleman! My name is Regina, the Queen of Castle
+            Red. '
+        - columnID: column3
+          text: 
+      - recordID: 230dbc27d2e84ab0bfa22fc238f0f47f
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 'Shut up! Get out of here. Your husband is dead. '
+        - columnID: column3
+          text: 
+      - recordID: 17a76e224c864142a5c4f274298b5459
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: "Oh\u2026no\u2026my darling\u2026(fake crying)"
+        - columnID: column3
+          text: 
+      - recordID: fee9522888bb44d991a88866ca94c361
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: "Don\u2019t fuss so! The story of your throne is over. "
+        - columnID: column3
+          text: 
+      - recordID: 7226068fdf184db0a4ce5391b69b5a2e
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 'Hahahahahahah that dirty lier! He deserves it! But you! I will let
+            you die with some dignity! '
+        - columnID: column3
+          text: 
+      - recordID: 7ac73bd260194f51a776838b187e36d1
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 'Are you kidding me? I will throw you to the chimney and make you
+            to be a roasted duck. '
+        - columnID: column3
+          text: 
+      - recordID: 06e6b585e25d44bc9a762a5269ef19f4
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 'When you step on my land, you know the result. I win or you lose. '
+        - columnID: column3
+          text: 
+      - recordID: db458a4eaeb646e0894ad596a53056b7
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 'Hehe, good luck with your next incarnation. '
+        - columnID: column3
+          text: 
+      - recordID: f016452d82db403bad3921c44a1edcf6
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: Commanders! Seize them!
+        - columnID: column3
+          text: 
+      - recordID: ee55ebf1a1b643b48c3b51db42e6581c
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: Oh no! We are surrounded, John!
+        - columnID: column3
+          text: 
+      - recordID: 8d57cd3d80054fd894bae9c02e8b005a
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: Excellent! We can attack in any directions. Boo! Hoo!
+        - columnID: column3
+          text: 
+      - recordID: emd05peq8jx2l1
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 
+        - columnID: column3
+          text: 
+    - nameGrid: Item Store
+      gridID: v115400wmyopqx
+      viewID: 9mm5o00edk941z
+      records:
+      - recordID: STRING_1
+        pathTag: New Tag 1
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: ROBONAUT YELLOW FIX
+        - columnID: column3
+          text: Robot
+        - columnID: column4
+          text: A powerful Nano-Kevlar hardened robot
+        - columnID: column5
+          text: 123
+        - columnID: column6
+          text: True
+        - columnID: column7
+          text: Special flame thrower ability
+        - columnID: column8
+          text: 456
+        - columnID: column9
+          text: 90
+        - columnID: column11
+          text: vietnam
+      - recordID: STRING_2
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: THE IRON GIANT
+        - columnID: column3
+          text: Robot
+        - columnID: column4
+          text: Highly mobile transformer robot
+        - columnID: column5
+          text: 
+        - columnID: column6
+          text: 
+        - columnID: column7
+          text: Can transform into a fighting jet
+        - columnID: column8
+          text: 
+        - columnID: column9
+          text: 60
+        - columnID: column11
+          text: 
+      - recordID: STRING_3
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: T-51 ENRYU
+        - columnID: column3
+          text: Robot
+        - columnID: column4
+          text: Stealth diamond infused armour robot
+        - columnID: column5
+          text: 
+        - columnID: column6
+          text: True
+        - columnID: column7
+          text: Invisibility power
+        - columnID: column8
+          text: 
+        - columnID: column9
+          text: 60
+        - columnID: column11
+          text: 
+      - recordID: STRING_4
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: ROSSUMS' ROBOTS
+        - columnID: column3
+          text: Robot
+        - columnID: column4
+          text: High strength and constitution
+        - columnID: column5
+          text: 
+        - columnID: column6
+          text: 
+        - columnID: column7
+          text: Electrifying stronghold claws
+        - columnID: column8
+          text: 
+        - columnID: column9
+          text: 50
+        - columnID: column11
+          text: 
+      - recordID: STRING_5
+        pathTag: 
+        columns:
+        - columnID: column1
+          text: 
+        - columnID: column2
+          text: 'Soul of Thunder
+
+'
+        - columnID: column3
+          text: Weapon
+        - columnID: column4
+          text: 'Heat seeking missile pack
+
+'
+        - columnID: column5
+          text: 
+        - columnID: column6
+          text: True
+        - columnID: column7
+          text: Lock on target missiles
+        - columnID: column8
+          text: 
+        - columnID: column9
+          text: 
+        - columnID: column11
+          text: 
+    - nameGrid: Fastlane
+      gridID: 414z8o0pvopy8m
+      viewID: v12w8e0qp2opz3
+      records:
+      - recordID: STR_ALL_MODES
+        pathTag: STR/ALL/MODES
+        columns:
+        - columnID: column1
+          text: All Modes CHANGE
+        - columnID: column4
+          text: All Modes CHANGE
+        - columnID: column3
+          text: Tous les modes CHANGE
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_ARCADE
+        pathTag: STR/ARCADE
+        columns:
+        - columnID: column1
+          text: Arcade
+        - columnID: column4
+          text: Arcade
+        - columnID: column3
+          text: Arcade
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_AUTOMATIC
+        pathTag: STR/AUTOMATIC
+        columns:
+        - columnID: column1
+          text: Automatic
+        - columnID: column4
+          text: Automatica
+        - columnID: column3
+          text: Automatique
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_BACK
+        pathTag: STR/BACK
+        columns:
+        - columnID: column1
+          text: Back CHANGE
+        - columnID: column4
+          text: Indietro
+        - columnID: column3
+          text: Retour
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_BALANCE
+        pathTag: STR/BALANCE
+        columns:
+        - columnID: column1
+          text: BALANCE
+        - columnID: column4
+          text: "STABILIT\xC0"
+        - columnID: column3
+          text: "\xC9QUILIBRE"
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_BTH_MULTI
+        pathTag: STR/BTH/MULTI
+        columns:
+        - columnID: column1
+          text: Multiplayer
+        - columnID: column4
+          text: "Pi\xF9 giocatori"
+        - columnID: column3
+          text: Multi-joueurs
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_BTH_NOHOSTS
+        pathTag: STR/BTH/NOHOSTS
+        columns:
+        - columnID: column1
+          text: No hosts found.
+        - columnID: column4
+          text: Nessun host.
+        - columnID: column3
+          text: "Impossible de un h\xF4te."
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_CAR
+        pathTag: STR/CAR
+        columns:
+        - columnID: column1
+          text: Car
+        - columnID: column4
+          text: Vettura
+        - columnID: column3
+          text: Voiture
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_CARS
+        pathTag: STR/CARS
+        columns:
+        - columnID: column1
+          text: Cars
+        - columnID: column4
+          text: Vetture
+        - columnID: column3
+          text: Voitures
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHALDESC_CHAS
+        pathTag: STR/CHALDESC/CHAS
+        columns:
+        - columnID: column1
+          text: Overtake the other car before it passes the finish line.
+        - columnID: column4
+          text: Supera l'altra vettura prima che passi il traguardo.
+        - columnID: column3
+          text: "Doublez l'autre voiture avant qu'elle ne passe la ligne d'arriv\xE9e."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHALDESC_CHEC
+        pathTag: STR/CHALDESC/CHEC
+        columns:
+        - columnID: column1
+          text: Earn a point for every Checkpoint passed. Try to beat the target
+            score.
+        - columnID: column4
+          text: Ottieni un punto per ogni checkpoint superato. Cerca di battere il
+            punteggio limite.
+        - columnID: column3
+          text: "Marquez un point \xE0 chaque fois que vous passez un point de contr\xF4le.
+            Essayez de battre le score donn\xE9."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHAL_FAIL
+        pathTag: STR/CHAL/FAIL
+        columns:
+        - columnID: column1
+          text: CHALLENGE FAILED
+        - columnID: column4
+          text: SFIDA FALLITA
+        - columnID: column3
+          text: "\xC9CHEC AU D\xC9FI "
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHASE_2
+        pathTag: STR/CHASE/2
+        columns:
+        - columnID: column1
+          text: Chase 2
+        - columnID: column4
+          text: Inseguimento 2
+        - columnID: column3
+          text: Poursuite 2
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CH_COLOR
+        pathTag: STR/CH/COLOR
+        columns:
+        - columnID: column1
+          text: Change Color
+        - columnID: column4
+          text: Cambia colore
+        - columnID: column3
+          text: Changer couleur
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CONNECTING
+        pathTag: STR/CONNECTING
+        columns:
+        - columnID: column1
+          text: Connecting
+        - columnID: column4
+          text: Connessione
+        - columnID: column3
+          text: Connexion en cours
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CONTESTANTS
+        pathTag: STR/CONTESTANTS
+        columns:
+        - columnID: column1
+          text: 'CONTESTANTS:'
+        - columnID: column4
+          text: 'CONCORRENTI:'
+        - columnID: column3
+          text: 'CONCURRENTS : '
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CORNER
+        pathTag: STR/CORNER
+        columns:
+        - columnID: column1
+          text: CORNERING
+        - columnID: column4
+          text: T. DI STRADA
+        - columnID: column3
+          text: VIRAGE
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CP
+        pathTag: STR/CP
+        columns:
+        - columnID: column1
+          text: Checkpoint
+        - columnID: column4
+          text: Checkpoint
+        - columnID: column3
+          text: "Point de contr\xF4le"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_DOCCORD
+        pathTag: STR/CRED/DOCCORD
+        columns:
+        - columnID: column1
+          text: Documentation Co-ordinator
+        - columnID: column4
+          text: Coordinatore Della Documentazione
+        - columnID: column3
+          text: Coordonnateur De Documentation
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_GAMEPLAY
+        pathTag: STR/CRED/GAMEPLAY
+        columns:
+        - columnID: column1
+          text: Gameplay Coordinator
+        - columnID: column4
+          text: Coordinatore Gameplay
+        - columnID: column3
+          text: Responsable gameplay
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_ITMAN
+        pathTag: STR/CRED/ITMAN
+        columns:
+        - columnID: column1
+          text: IT Manager
+        - columnID: column4
+          text: Responsabile IT
+        - columnID: column3
+          text: Responsable IT
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_LART
+        pathTag: STR/CRED/LART
+        columns:
+        - columnID: column1
+          text: Lead Artist
+        - columnID: column4
+          text: Primo artista
+        - columnID: column3
+          text: Artiste principal
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_MUS
+        pathTag: STR/CRED/MUS
+        columns:
+        - columnID: column1
+          text: Music
+        - columnID: column4
+          text: Musica
+        - columnID: column3
+          text: Musique
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_PRODASS
+        pathTag: STR/CRED/PRODASS
+        columns:
+        - columnID: column1
+          text: Assistant Producer
+        - columnID: column4
+          text: Assistente alla produzione
+        - columnID: column3
+          text: Producteur adjoint
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_PRODDES
+        pathTag: STR/CRED/PRODDES
+        columns:
+        - columnID: column1
+          text: Producer/Designer
+        - columnID: column4
+          text: Produttore/Designer
+        - columnID: column3
+          text: Producteur/Concepteur
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_PROD_MAN
+        pathTag: STR/CRED/PROD/MAN
+        columns:
+        - columnID: column1
+          text: Production Manager
+        - columnID: column4
+          text: Responsabile di Produzione
+        - columnID: column3
+          text: Directeur de Production
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_SFX
+        pathTag: STR/CRED/SFX
+        columns:
+        - columnID: column1
+          text: Sound
+        - columnID: column4
+          text: Audio
+        - columnID: column3
+          text: Son
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRITICAL_BATTERY
+        pathTag: STR/CRITICAL/BATTERY
+        columns:
+        - columnID: column1
+          text: Battery level is critical.
+        - columnID: column4
+          text: "La batteria \xE8 esaurita."
+        - columnID: column3
+          text: Pile au niveau critique.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CU_OFF
+        pathTag: STR/CU/OFF
+        columns:
+        - columnID: column1
+          text: Catch up Off
+        - columnID: column4
+          text: Recupero Off
+        - columnID: column3
+          text: "Poursuite d\xE9sactiv\xE9e"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CU_ON
+        pathTag: STR/CU/ON
+        columns:
+        - columnID: column1
+          text: Catch up On
+        - columnID: column4
+          text: Recupero On
+        - columnID: column3
+          text: "Poursuite activ\xE9e"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_DATA
+        pathTag: STR/DATA
+        columns:
+        - columnID: column1
+          text: Data
+        - columnID: column4
+          text: Dati
+        - columnID: column3
+          text: "Donn\xE9es"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_DEFAULTS
+        pathTag: STR/DEFAULTS
+        columns:
+        - columnID: column1
+          text: Defaults
+        - columnID: column4
+          text: Predefiniti
+        - columnID: column3
+          text: "Param\xE8tres par d\xE9faut"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_DEL_REP
+        pathTag: STR/DEL/REP
+        columns:
+        - columnID: column1
+          text: Deleting this Replay will permanently remove it from your device.
+        - columnID: column4
+          text: Se cancelli questo replay, lo eliminerai dal tuo iPhone/iPod touch.
+        - columnID: column3
+          text: "Si vous supprimez ce ralenti, il sera d\xE9finitivement effac\xE9
+            de votre iPhone/iPod touch."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_DEV
+        pathTag: STR/DEV
+        columns:
+        - columnID: column1
+          text: Developer
+        - columnID: column4
+          text: Sviluppatore
+        - columnID: column3
+          text: "D\xE9veloppeur"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_DIFFI
+        pathTag: STR/DIFFI
+        columns:
+        - columnID: column1
+          text: Difficulty
+        - columnID: column4
+          text: "Difficolt\xE0"
+        - columnID: column3
+          text: "Difficult\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_DNF
+        pathTag: STR/DNF
+        columns:
+        - columnID: column1
+          text: Did not finish
+        - columnID: column4
+          text: Non hai finito
+        - columnID: column3
+          text: "N'a pas termin\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_EDIT
+        pathTag: STR/EDIT
+        columns:
+        - columnID: column1
+          text: Edit
+        - columnID: column4
+          text: Modifica
+        - columnID: column3
+          text: Modifier
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_ERROR
+        pathTag: STR/ERROR
+        columns:
+        - columnID: column1
+          text: Error
+        - columnID: column4
+          text: Errore
+        - columnID: column3
+          text: Erreur
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_EXECPROD
+        pathTag: STR/EXECPROD
+        columns:
+        - columnID: column1
+          text: Managing Director
+        - columnID: column4
+          text: Produttore esecutivo
+        - columnID: column3
+          text: "Producteur ex\xE9cutif"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_FINISH
+        pathTag: STR/FINISH
+        columns:
+        - columnID: column1
+          text: FINISH!
+        - columnID: column4
+          text: FINE!
+        - columnID: column3
+          text: "ARRIV\xC9E !"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_FIRST
+        pathTag: STR/FIRST
+        columns:
+        - columnID: column1
+          text: 1st
+        - columnID: column4
+          text: "1\xB0"
+        - columnID: column3
+          text: "1\xE8re"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_GAME_VOL
+        pathTag: STR/GAME/VOL
+        columns:
+        - columnID: column1
+          text: Game Volume
+        - columnID: column4
+          text: Volume gioco
+        - columnID: column3
+          text: Volume jeu
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HARD
+        pathTag: STR/HARD
+        columns:
+        - columnID: column1
+          text: Hard
+        - columnID: column4
+          text: Difficile
+        - columnID: column3
+          text: Difficile
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_GOAL
+        pathTag: STR/HUD/GOAL
+        columns:
+        - columnID: column1
+          text: GOAL
+        - columnID: column4
+          text: TRAGUARDO
+        - columnID: column3
+          text: "ARRIV\xC9E"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_KPH
+        pathTag: STR/HUD/KPH
+        columns:
+        - columnID: column1
+          text: kph
+        - columnID: column4
+          text: Km/h
+        - columnID: column3
+          text: km/h
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_POSITION
+        pathTag: STR/HUD/POSITION
+        columns:
+        - columnID: column1
+          text: 'POSITION: %d'
+        - columnID: column4
+          text: 'PIAZZAMENTO: %d'
+        - columnID: column3
+          text: 'POSITION : %d'
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_INBOX
+        pathTag: STR/INBOX
+        columns:
+        - columnID: column1
+          text: Go To Inbox
+        - columnID: column4
+          text: Vai a Inbox
+        - columnID: column3
+          text: "Aller \xE0 bo\xEEte de r\xE9ception"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_JB_CHALLENGE
+        pathTag: STR/JB/CHALLENGE
+        columns:
+        - columnID: column1
+          text: Challenge
+        - columnID: column4
+          text: Sfida
+        - columnID: column3
+          text: "D\xE9fi"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_JOIN_GAME
+        pathTag: STR/JOIN/GAME
+        columns:
+        - columnID: column1
+          text: Join Game
+        - columnID: column4
+          text: Partecipa
+        - columnID: column3
+          text: Rejoindre partie
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_JOIN_SYNC
+        pathTag: STR/JOIN/SYNC
+        columns:
+        - columnID: column1
+          text: Join
+        - columnID: column4
+          text: Partecipa
+        - columnID: column3
+          text: Rejoindre
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_LICENSE
+        pathTag: STR/LICENSE
+        columns:
+        - columnID: column1
+          text: asdf
+        - columnID: column4
+          text: asdf
+        - columnID: column3
+          text: asdf
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_LOAD
+        pathTag: STR/LOAD
+        columns:
+        - columnID: column1
+          text: Load
+        - columnID: column4
+          text: Carica
+        - columnID: column3
+          text: Charger
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_L_ITALIANO
+        pathTag: STR/L/ITALIANO
+        columns:
+        - columnID: column1
+          text: Italiano
+        - columnID: column4
+          text: Italiano
+        - columnID: column3
+          text: Italiano
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_L_SPANISH
+        pathTag: STR/L/SPANISH
+        columns:
+        - columnID: column1
+          text: "Espa\xF1ol"
+        - columnID: column4
+          text: "Espa\xF1ol"
+        - columnID: column3
+          text: "Espa\xF1ol"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MAINMENU
+        pathTag: STR/MAINMENU
+        columns:
+        - columnID: column1
+          text: Main Menu
+        - columnID: column4
+          text: Menu principale
+        - columnID: column3
+          text: Menu principal
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MODE
+        pathTag: STR/MODE
+        columns:
+        - columnID: column1
+          text: Mode
+        - columnID: column4
+          text: "Modalit\xE0"
+        - columnID: column3
+          text: Mode
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_BTH_DISCONNECTED
+        pathTag: STR/MSG/BTH/DISCONNECTED
+        columns:
+        - columnID: column1
+          text: You have been disconnected from host.
+        - columnID: column4
+          text: Ti sei disconnesso dall'host.
+        - columnID: column3
+          text: "Vous n'\xEAtes plus connect\xE9 \xE0 l'h\xF4te."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_BTH_FULL
+        pathTag: STR/MSG/BTH/FULL
+        columns:
+        - columnID: column1
+          text: Game is full. Try later.
+        - columnID: column4
+          text: "Partita al completo. Riprova pi\xF9 tardi."
+        - columnID: column3
+          text: Le jeu est complet. Essayez plus tard.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_BTH_HOST_LEAVE
+        pathTag: STR/MSG/BTH/HOST/LEAVE
+        columns:
+        - columnID: column1
+          text: Are you sure you want to leave the lobby? This will disconnect all
+            players.
+        - columnID: column4
+          text: Vuoi abbandonare la partita? Tutti i giocatori verranno scollegati.
+        - columnID: column3
+          text: "Voulez vous vraiment quitter le foyer ? Tous les autres joueurs
+            seront d\xE9connect\xE9s."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_DISCARD
+        pathTag: STR/MSG/DISCARD
+        columns:
+        - columnID: column1
+          text: Discard changes?
+        - columnID: column4
+          text: Elimini modifiche?
+        - columnID: column3
+          text: Supprimer les modifications ?
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_NO_MEMORY
+        pathTag: STR/MSG/NO/MEMORY
+        columns:
+        - columnID: column1
+          text: Not enough free memory to run the game. Try rebooting your device.
+        - columnID: column4
+          text: Memoria insufficiente per giocare. Prova a riavviare il Gizmondo
+        - columnID: column3
+          text: "Pas assez de m\xE9moire libre pour ex\xE9cuter le jeu. Essayez de
+            red\xE9marrer votre Gizmondo."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_RP_SAVED
+        pathTag: STR/MSG/RP/SAVED
+        columns:
+        - columnID: column1
+          text: Replay saved.
+        - columnID: column4
+          text: Replay salvato
+        - columnID: column3
+          text: "Ralenti enregistr\xE9."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_SAVE_FULL
+        pathTag: STR/MSG/SAVE/FULL
+        columns:
+        - columnID: column1
+          text: There is not enough space on your device to save file. %dKB of space
+            needed.
+        - columnID: column4
+          text: "Sul tuo Gizmondo non c'\xE8 spazio per salvare i dati: servono %dKB
+            liberi."
+        - columnID: column3
+          text: Votre Gizmondo ne dispose pas d'assez d'espace pour enregistrer le
+            fichier. Il faut %dKo.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_SD_REMOVED
+        pathTag: STR/MSG/SD/REMOVED
+        columns:
+        - columnID: column1
+          text: The SD card has been removed, please reinsert or press the Stop button
+            to quit the game and return to the Home page.
+        - columnID: column4
+          text: "La scheda SD \xE8 stata rimossa. Inseriscila o premi il pulsante
+            Stop per uscire dal gioco e tornare alla Home page."
+        - columnID: column3
+          text: "La carte SD a \xE9t\xE9 retir\xE9e, veuillez la replacer ou appuyez
+            sur le bouton Stop pour quitter le jeu et revenir \xE0 la page d'accueil."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_SV_RP_FAIL
+        pathTag: STR/MSG/SV/RP/FAIL
+        columns:
+        - columnID: column1
+          text: Failed to save replay.
+        - columnID: column4
+          text: Impossibile salvare replay
+        - columnID: column3
+          text: Echec de l'enregistrement du ralenti.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_SYNC_COMPLETE
+        pathTag: STR/MSG/SYNC/COMPLETE
+        columns:
+        - columnID: column1
+          text: Synchronization complete.
+        - columnID: column4
+          text: Sincronizzazione completa.
+        - columnID: column3
+          text: "Synchronisation termin\xE9e."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_SYNC_WARNING
+        pathTag: STR/MSG/SYNC/WARNING
+        columns:
+        - columnID: column1
+          text: Synchronizing data will overwrite your current highscores.
+        - columnID: column4
+          text: "La sincronizzazione dei dati sovrascriver\xE0 i tuoi record."
+        - columnID: column3
+          text: "Les donn\xE9es de la synchronisation vont \xE9craser vos meilleurs
+            scores actuels."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MUS_VOL
+        pathTag: STR/MUS/VOL
+        columns:
+        - columnID: column1
+          text: Music Volume
+        - columnID: column4
+          text: Volume musica
+        - columnID: column3
+          text: Volume musique
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_NEXT_SKIN
+        pathTag: STR/NEXT/SKIN
+        columns:
+        - columnID: column1
+          text: Next Skin
+        - columnID: column4
+          text: Skin succ.
+        - columnID: column3
+          text: Apparence suivante
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_NORMAL
+        pathTag: STR/NORMAL
+        columns:
+        - columnID: column1
+          text: Normal
+        - columnID: column4
+          text: Normale
+        - columnID: column3
+          text: Normal
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_ON
+        pathTag: STR/ON
+        columns:
+        - columnID: column1
+          text: On
+        - columnID: column4
+          text: On
+        - columnID: column3
+          text: "Activ\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_OPTIONS
+        pathTag: STR/OPTIONS
+        columns:
+        - columnID: column1
+          text: Options
+        - columnID: column4
+          text: Opzioni
+        - columnID: column3
+          text: Options
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_OUTOFTIME
+        pathTag: STR/OUTOFTIME
+        columns:
+        - columnID: column1
+          text: Out of time
+        - columnID: column4
+          text: Tempo scaduto
+        - columnID: column3
+          text: "Temps \xE9coul\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PACE_OFF
+        pathTag: STR/PACE/OFF
+        columns:
+        - columnID: column1
+          text: Pace Car Off
+        - columnID: column4
+          text: Pacecar Off
+        - columnID: column3
+          text: "Pace-car d\xE9sactiv\xE9e"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PACE_ON
+        pathTag: STR/PACE/ON
+        columns:
+        - columnID: column1
+          text: Pace Car On
+        - columnID: column4
+          text: Pacecar On
+        - columnID: column3
+          text: "Pace-car activ\xE9e"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PAUSED
+        pathTag: STR/PAUSED
+        columns:
+        - columnID: column1
+          text: Paused
+        - columnID: column4
+          text: In pausa
+        - columnID: column3
+          text: Partie en pause
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PERFECTION
+        pathTag: STR/PERFECTION
+        columns:
+        - columnID: column1
+          text: Perfection
+        - columnID: column4
+          text: Perfezione
+        - columnID: column3
+          text: Perfection
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PERF_1
+        pathTag: STR/PERF/1
+        columns:
+        - columnID: column1
+          text: Perfection
+        - columnID: column4
+          text: Perfezione
+        - columnID: column3
+          text: Perfection
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PLAY
+        pathTag: STR/PLAY
+        columns:
+        - columnID: column1
+          text: Play
+        - columnID: column4
+          text: Gioca
+        - columnID: column3
+          text: Jouer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RACE_AGAIN
+        pathTag: STR/RACE/AGAIN
+        columns:
+        - columnID: column1
+          text: Race Again
+        - columnID: column4
+          text: Ricomincia
+        - columnID: column3
+          text: Refaire une course
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RECORDS
+        pathTag: STR/RECORDS
+        columns:
+        - columnID: column1
+          text: Records
+        - columnID: column4
+          text: Record
+        - columnID: column3
+          text: Records
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_REPLAY
+        pathTag: STR/REPLAY
+        columns:
+        - columnID: column1
+          text: Replay
+        - columnID: column4
+          text: Replay
+        - columnID: column3
+          text: Ralenti
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RESTART
+        pathTag: STR/RESTART
+        columns:
+        - columnID: column1
+          text: Restart
+        - columnID: column4
+          text: Ricomincia
+        - columnID: column3
+          text: Recommencer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_REVERSE
+        pathTag: STR/REVERSE
+        columns:
+        - columnID: column1
+          text: Reverse
+        - columnID: column4
+          text: Retromarcia
+        - columnID: column3
+          text: "Marche arri\xE8re"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_ROUTE
+        pathTag: STR/ROUTE
+        columns:
+        - columnID: column1
+          text: Route
+        - columnID: column4
+          text: Tracciato
+        - columnID: column3
+          text: Parcours
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SECOND
+        pathTag: STR/SECOND
+        columns:
+        - columnID: column1
+          text: 2nd
+        - columnID: column4
+          text: "2\xB0"
+        - columnID: column3
+          text: "2\xE8me"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_CHAL
+        pathTag: STR/SEL/CHAL
+        columns:
+        - columnID: column1
+          text: Select Challenge
+        - columnID: column4
+          text: Scegli sfida
+        - columnID: column3
+          text: "Choisir d\xE9fi"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_MODE
+        pathTag: STR/SEL/MODE
+        columns:
+        - columnID: column1
+          text: Select Mode
+        - columnID: column4
+          text: "Scegli modalit\xE0"
+        - columnID: column3
+          text: Choisir mode
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_NEWCHAL
+        pathTag: STR/SEL/NEWCHAL
+        columns:
+        - columnID: column1
+          text: Select New Challenge
+        - columnID: column4
+          text: Scegli nuova sfida
+        - columnID: column3
+          text: "Choisir nouveau d\xE9fi"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_NEWCOURSE
+        pathTag: STR/SEL/NEWCOURSE
+        columns:
+        - columnID: column1
+          text: Select New Route
+        - columnID: column4
+          text: Scegli nuovo tracciato
+        - columnID: column3
+          text: Choisir nouveau parcours
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_NEW_TRIAL
+        pathTag: STR/SEL/NEW/TRIAL
+        columns:
+        - columnID: column1
+          text: Select New Trial
+        - columnID: column4
+          text: Scegli nuova corsa
+        - columnID: column3
+          text: Choisir nouvel essai
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_ROUTE
+        pathTag: STR/SEL/ROUTE
+        columns:
+        - columnID: column1
+          text: Select Route
+        - columnID: column4
+          text: Scegli tracciato
+        - columnID: column3
+          text: Choisir parcours
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SINGLEPLAYER
+        pathTag: STR/SINGLEPLAYER
+        columns:
+        - columnID: column1
+          text: Play
+        - columnID: column4
+          text: Un giocatore
+        - columnID: column3
+          text: Joueur unique
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_ST_RACE
+        pathTag: STR/ST/RACE
+        columns:
+        - columnID: column1
+          text: Start Race
+        - columnID: column4
+          text: Inizia
+        - columnID: column3
+          text: Commencer course
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SYNC
+        pathTag: STR/SYNC
+        columns:
+        - columnID: column1
+          text: Synchronize
+        - columnID: column4
+          text: Sincronizza
+        - columnID: column3
+          text: Synchroniser
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_S_MONO
+        pathTag: STR/S/MONO
+        columns:
+        - columnID: column1
+          text: Mono
+        - columnID: column4
+          text: Mono
+        - columnID: column3
+          text: Mono
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_S_SURROUND
+        pathTag: STR/S/SURROUND
+        columns:
+        - columnID: column1
+          text: Stereo/Surround
+        - columnID: column4
+          text: Stereo/Surround
+        - columnID: column3
+          text: "St\xE9r\xE9o/effet surround"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_THANKS
+        pathTag: STR/THANKS
+        columns:
+        - columnID: column1
+          text: Thanks for playing
+        - columnID: column4
+          text: Grazie per aver giocato
+        - columnID: column3
+          text: "Merci d'avoir jou\xE9 !"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_THIRD
+        pathTag: STR/THIRD
+        columns:
+        - columnID: column1
+          text: 3rd
+        - columnID: column4
+          text: "3\xB0"
+        - columnID: column3
+          text: "3\xE8me"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_UNLOCK_CAR
+        pathTag: STR/UNLOCK/CAR
+        columns:
+        - columnID: column1
+          text: 'You have unlocked the %s. '
+        - columnID: column4
+          text: Hai sbloccato la %s.
+        - columnID: column3
+          text: "Vous avez d\xE9bloqu\xE9 la %s. "
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_UNLOCK_CHAL
+        pathTag: STR/UNLOCK/CHAL
+        columns:
+        - columnID: column1
+          text: 'You have unlocked the %s challenge. '
+        - columnID: column4
+          text: Hai la sfida %s.
+        - columnID: column3
+          text: "Vous avez d\xE9bloqu\xE9 le d\xE9fi %s."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_UNLOCK_NEWSKINS
+        pathTag: STR/UNLOCK/NEWSKINS
+        columns:
+        - columnID: column1
+          text: You have unlocked new car skins.
+        - columnID: column4
+          text: Hai sbloccato nuovi skin.
+        - columnID: column3
+          text: "Vous avez d\xE9bloqu\xE9 de nouvelles apparences pour les voitures."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_WAIT
+        pathTag: STR/WAIT
+        columns:
+        - columnID: column1
+          text: Wait
+        - columnID: column4
+          text: Attendi
+        - columnID: column3
+          text: Attendre
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_ACCEL
+        pathTag: STR/ACCEL
+        columns:
+        - columnID: column1
+          text: ACCELERATION CHANGE
+        - columnID: column4
+          text: ACCELERAZIONE CHANGE
+        - columnID: column3
+          text: "ACC\xC9L\xC9RATION"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_ACCEPT
+        pathTag: STR/ACCEPT
+        columns:
+        - columnID: column1
+          text: Accept
+        - columnID: column4
+          text: Accetta
+        - columnID: column3
+          text: Accepter
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_APPLY
+        pathTag: STR/APPLY
+        columns:
+        - columnID: column1
+          text: Apply CHANGE 2
+        - columnID: column4
+          text: Apply CHANGE 1
+        - columnID: column3
+          text: Appliquer CHANGE 1
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_BRIGHTNESS
+        pathTag: STR/BRIGHTNESS
+        columns:
+        - columnID: column1
+          text: Brightness CHANGE
+        - columnID: column4
+          text: "Luminosit\xE0"
+        - columnID: column3
+          text: "Luminosit\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CANCEL
+        pathTag: STR/CANCEL
+        columns:
+        - columnID: column1
+          text: Cancel
+        - columnID: column4
+          text: Annulla
+        - columnID: column3
+          text: Annuler
+        - columnID: column2
+          text: TRUE
+        - columnID: column5
+          text: 
+      - recordID: STR_CATCHUP
+        pathTag: STR/CATCHUP
+        columns:
+        - columnID: column1
+          text: Catch Up
+        - columnID: column4
+          text: Recupero
+        - columnID: column3
+          text: Poursuite
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHALDESC_PERF
+        pathTag: STR/CHALDESC/PERF
+        columns:
+        - columnID: column1
+          text: Complete the route within the time limit without touching the walls
+            more than twice.
+        - columnID: column4
+          text: "Completa la corsa entro il tempo limite senza toccare i muri pi\xF9
+            di due volte."
+        - columnID: column3
+          text: 'Terminez cette course dans les temps sans toucher plus de deux fois
+            les murs. '
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHASE_1
+        pathTag: STR/CHASE/1
+        columns:
+        - columnID: column1
+          text: Chase
+        - columnID: column4
+          text: Inseguimento
+        - columnID: column3
+          text: Poursuite
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHECKP_1
+        pathTag: STR/CHECKP/1
+        columns:
+        - columnID: column1
+          text: Checkpoint Challenge
+        - columnID: column4
+          text: Sfida checkpoint
+        - columnID: column3
+          text: "D\xE9fi points de contr\xF4le"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHECKP_2
+        pathTag: STR/CHECKP/2
+        columns:
+        - columnID: column1
+          text: Checkpoint Challenge 2
+        - columnID: column4
+          text: Sfida checkpoint 2
+        - columnID: column3
+          text: "D\xE9fi points de contr\xF4le 2"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHICANE
+        pathTag: STR/CHICANE
+        columns:
+        - columnID: column1
+          text: Octane
+        - columnID: column4
+          text: Octane
+        - columnID: column3
+          text: Octane
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CHOOSE_GAME
+        pathTag: STR/CHOOSE/GAME
+        columns:
+        - columnID: column1
+          text: Choose A Game mode
+        - columnID: column4
+          text: Fixed Change
+        - columnID: column3
+          text: ADDD
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CONFIRM
+        pathTag: STR/CONFIRM
+        columns:
+        - columnID: column1
+          text: Confirm
+        - columnID: column4
+          text: Conferma
+        - columnID: column3
+          text: Confirmer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CONGRAT
+        pathTag: STR/CONGRAT
+        columns:
+        - columnID: column1
+          text: Congratulations!
+        - columnID: column4
+          text: Complimenti!
+        - columnID: column3
+          text: "F\xE9licitations !"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CONTINUE
+        pathTag: STR/CONTINUE
+        columns:
+        - columnID: column1
+          text: Continue
+        - columnID: column4
+          text: Continua
+        - columnID: column3
+          text: Continuer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_COPY
+        pathTag: STR/COPY
+        columns:
+        - columnID: column1
+          text: Copy
+        - columnID: column4
+          text: Copia
+        - columnID: column3
+          text: Copier
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CP_RACE
+        pathTag: STR/CP/RACE
+        columns:
+        - columnID: column1
+          text: Checkpoint Race
+        - columnID: column4
+          text: Gara checkpoint
+        - columnID: column3
+          text: "Course \xE0 points de contr\xF4le"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CREDITS
+        pathTag: STR/CREDITS
+        columns:
+        - columnID: column1
+          text: Credits
+        - columnID: column4
+          text: Riconoscimenti
+        - columnID: column3
+          text: "Cr\xE9dits"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_ARTS
+        pathTag: STR/CRED/ARTS
+        columns:
+        - columnID: column1
+          text: Artists
+        - columnID: column4
+          text: Artisti
+        - columnID: column3
+          text: Artistes
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_DIR
+        pathTag: STR/CRED/DIR
+        columns:
+        - columnID: column1
+          text: Director
+        - columnID: column4
+          text: Direttore
+        - columnID: column3
+          text: "R\xE9alisateur"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_FINCON
+        pathTag: STR/CRED/FINCON
+        columns:
+        - columnID: column1
+          text: Financial Controller
+        - columnID: column4
+          text: Controllore finanziario
+        - columnID: column3
+          text: "Contr\xF4leur financier"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_IPHONE_LEAD
+        pathTag: STR/CRED/IPHONE/LEAD
+        columns:
+        - columnID: column1
+          text: iPhone Lead Programmer
+        - columnID: column4
+          text: iPhone Lead Programmer
+        - columnID: column3
+          text: iPhone Lead Programmer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_LEADTESTER
+        pathTag: STR/CRED/LEADTESTER
+        columns:
+        - columnID: column1
+          text: Lead Tester
+        - columnID: column4
+          text: Lead Tester
+        - columnID: column3
+          text: Testeur en chef
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_LPROG
+        pathTag: STR/CRED/LPROG
+        columns:
+        - columnID: column1
+          text: Lead Programmer
+        - columnID: column4
+          text: Primo programmatore
+        - columnID: column3
+          text: Programmeur principal
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_PROD
+        pathTag: STR/CRED/PROD
+        columns:
+        - columnID: column1
+          text: Producer
+        - columnID: column4
+          text: Produttore
+        - columnID: column3
+          text: Producteur
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_PROGS
+        pathTag: STR/CRED/PROGS
+        columns:
+        - columnID: column1
+          text: Programmers
+        - columnID: column4
+          text: Programmatori
+        - columnID: column3
+          text: Programmeurs
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_QAMAN
+        pathTag: STR/CRED/QAMAN
+        columns:
+        - columnID: column1
+          text: QA Manager
+        - columnID: column4
+          text: QA Manager
+        - columnID: column3
+          text: Directeur AQ
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_QA_TEAM
+        pathTag: STR/CRED/QA/TEAM
+        columns:
+        - columnID: column1
+          text: QA Team
+        - columnID: column4
+          text: QA Team
+        - columnID: column3
+          text: Equipe AQ
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_CRED_THX
+        pathTag: STR/CRED/THX
+        columns:
+        - columnID: column1
+          text: Special Thanks
+        - columnID: column4
+          text: Si ringrazia in particolare
+        - columnID: column3
+          text: "Remerciements sp\xE9ciaux"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_DELETE
+        pathTag: STR/DELETE
+        columns:
+        - columnID: column1
+          text: Delete
+        - columnID: column4
+          text: Cancella
+        - columnID: column3
+          text: Supprimer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_EASY
+        pathTag: STR/EASY
+        columns:
+        - columnID: column1
+          text: Easy
+        - columnID: column4
+          text: Facile
+        - columnID: column3
+          text: Facile
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_EXIT
+        pathTag: STR/EXIT
+        columns:
+        - columnID: column1
+          text: Exit
+        - columnID: column4
+          text: Esci
+        - columnID: column3
+          text: Quitter
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_EXIT_2MM
+        pathTag: STR/EXIT/2MM
+        columns:
+        - columnID: column1
+          text: Exit To Main Menu
+        - columnID: column4
+          text: Torna al menu principale
+        - columnID: column3
+          text: Retour menu principal
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_FAIL_TO_LOAD
+        pathTag: STR/FAIL/TO/LOAD
+        columns:
+        - columnID: column1
+          text: Failed to load game settings.
+        - columnID: column4
+          text: Impossibile caricare le impostazioni.
+        - columnID: column3
+          text: "Echec au chargement des param\xE8tres du jeu."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_FOURTH
+        pathTag: STR/FOURTH
+        columns:
+        - columnID: column1
+          text: 4th
+        - columnID: column4
+          text: "4\xB0"
+        - columnID: column3
+          text: "4\xE8me"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_GAMEOVER
+        pathTag: STR/GAMEOVER
+        columns:
+        - columnID: column1
+          text: Game Over
+        - columnID: column4
+          text: Game Over
+        - columnID: column3
+          text: "Partie termin\xE9e"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_GARAGE
+        pathTag: STR/GARAGE
+        columns:
+        - columnID: column1
+          text: Garage
+        - columnID: column4
+          text: Garage
+        - columnID: column3
+          text: Garage
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HOST_SYNC
+        pathTag: STR/HOST/SYNC
+        columns:
+        - columnID: column1
+          text: Host
+        - columnID: column4
+          text: Host
+        - columnID: column3
+          text: "H\xF4te"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_COUNTDOWN_GO
+        pathTag: STR/HUD/COUNTDOWN/GO
+        columns:
+        - columnID: column1
+          text: GO!
+        - columnID: column4
+          text: VIA!
+        - columnID: column3
+          text: PARTEZ !
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_LAP
+        pathTag: STR/HUD/LAP
+        columns:
+        - columnID: column1
+          text: 'LAP: %d/%d'
+        - columnID: column4
+          text: 'GIRO: %d/%d'
+        - columnID: column3
+          text: 'TOUR : %d/%d'
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_PERFECTION
+        pathTag: STR/HUD/PERFECTION
+        columns:
+        - columnID: column1
+          text: PERFECTION
+        - columnID: column4
+          text: PERFEZIONE
+        - columnID: column3
+          text: PERFECTION
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_SCORE
+        pathTag: STR/HUD/SCORE
+        columns:
+        - columnID: column1
+          text: 'SCORE: %d'
+        - columnID: column4
+          text: 'PUNTI: %d'
+        - columnID: column3
+          text: 'POINTS : %d'
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_TARGET
+        pathTag: STR/HUD/TARGET
+        columns:
+        - columnID: column1
+          text: TARGET
+        - columnID: column4
+          text: OBIETTIVO
+        - columnID: column3
+          text: BUT
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HUD_TOTAL_TIME
+        pathTag: STR/HUD/TOTAL/TIME
+        columns:
+        - columnID: column1
+          text: 'TOTAL TIME: %d:%02d:%02d'
+        - columnID: column4
+          text: 'TEMPO TOTALE: %d:%02d:%02d'
+        - columnID: column3
+          text: 'TEMPS TOTAL : %d:%02d:%02d'
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_INFO
+        pathTag: STR/INFO
+        columns:
+        - columnID: column1
+          text: Info
+        - columnID: column4
+          text: Info
+        - columnID: column3
+          text: Info
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_LANG
+        pathTag: STR/LANG
+        columns:
+        - columnID: column1
+          text: Language
+        - columnID: column4
+          text: Lingua
+        - columnID: column3
+          text: Langue
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_LOAD_RACE
+        pathTag: STR/LOAD/RACE
+        columns:
+        - columnID: column1
+          text: Start Race
+        - columnID: column4
+          text: Carica corsa
+        - columnID: column3
+          text: Charger course
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_LOBBY
+        pathTag: STR/LOBBY
+        columns:
+        - columnID: column1
+          text: Lobby
+        - columnID: column4
+          text: Ingresso
+        - columnID: column3
+          text: Foyer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_LOCKED_STAGE
+        pathTag: STR/LOCKED/STAGE
+        columns:
+        - columnID: column1
+          text: ???????
+        - columnID: column4
+          text: ???????
+        - columnID: column3
+          text: ???????
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_L_ENGLISH
+        pathTag: STR/L/ENGLISH
+        columns:
+        - columnID: column1
+          text: English
+        - columnID: column4
+          text: English
+        - columnID: column3
+          text: English
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_L_FRENCH
+        pathTag: STR/L/FRENCH
+        columns:
+        - columnID: column1
+          text: "Fran\xE7ais"
+        - columnID: column4
+          text: "Fran\xE7ais"
+        - columnID: column3
+          text: "Fran\xE7ais"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_L_GERMAN
+        pathTag: STR/L/GERMAN
+        columns:
+        - columnID: column1
+          text: Deutsch
+        - columnID: column4
+          text: Deutsch
+        - columnID: column3
+          text: Deutsch
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MAIN_VOL
+        pathTag: STR/MAIN/VOL
+        columns:
+        - columnID: column1
+          text: Main Volume
+        - columnID: column4
+          text: Volume generale
+        - columnID: column3
+          text: Volume principal
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MANUAL
+        pathTag: STR/MANUAL
+        columns:
+        - columnID: column1
+          text: Manual
+        - columnID: column4
+          text: manuale
+        - columnID: column3
+          text: Manuelle
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MEDIUM
+        pathTag: STR/MEDIUM
+        columns:
+        - columnID: column1
+          text: Medium
+        - columnID: column4
+          text: Normale
+        - columnID: column3
+          text: Moyenne
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MIRROR
+        pathTag: STR/MIRROR
+        columns:
+        - columnID: column1
+          text: Mirror
+        - columnID: column4
+          text: Specchietto
+        - columnID: column3
+          text: "R\xE9troviseur"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_BTH_DISCONNECT
+        pathTag: STR/MSG/BTH/DISCONNECT
+        columns:
+        - columnID: column1
+          text: Could not connect to game. The host has left.
+        - columnID: column4
+          text: 'Connessione non avvenuta: host ha lasciato la partita.'
+        - columnID: column3
+          text: "Impossible de se connecter au jeu. L'h\xF4te est parti. "
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_DEFAULT
+        pathTag: STR/MSG/DEFAULT
+        columns:
+        - columnID: column1
+          text: This will return all settings to default.
+        - columnID: column4
+          text: Verranno usate le impostazioni predefinite.
+        - columnID: column3
+          text: "Cette commande fait revenir aux param\xE8tres par d\xE9faut."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_DEL_FAILED
+        pathTag: STR/MSG/DEL/FAILED
+        columns:
+        - columnID: column1
+          text: Failed to delete replay.
+        - columnID: column4
+          text: Impossibile cancellare replay.
+        - columnID: column3
+          text: Impossible de supprimer ralenti.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_INSUFF_SPACE
+        pathTag: STR/MSG/INSUFF/SPACE
+        columns:
+        - columnID: column1
+          text: There is insufficient space on your device to create the save file
+            for this game, in order to save your settings must have %dKB free.Continue
+            without save?
+        - columnID: column4
+          text: "Sul tuo Gizmondo non c'\xE8 spazio per creare dati di gioco. Per
+            salvare, il tuo disco GT deve avere %dKB liberi.\\nContinui senza salvare?"
+        - columnID: column3
+          text: "Il n'y a pas assez d'espace sur votre Gizmondo pour cr\xE9er un
+            fichier d'enregistrement pour ce jeu. Il faut au moins %dKo.n\\D\xE9sirez-vous
+            continuer sans enregistrer ?"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_LOW_BATTERY
+        pathTag: STR/MSG/LOW/BATTERY
+        columns:
+        - columnID: column1
+          text: Battery level is low.
+        - columnID: column4
+          text: "La batteria \xE8 scarica."
+        - columnID: column3
+          text: Pile en baisse.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_QUIT_CONFIRM
+        pathTag: STR/MSG/QUIT/CONFIRM
+        columns:
+        - columnID: column1
+          text: Are you sure you want to quit?
+        - columnID: column4
+          text: Vuoi uscire?
+        - columnID: column3
+          text: "Etes-vous s\xFBr(e) de vouloir quitter ?"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_MSG_SAVED_SETT
+        pathTag: STR/MSG/SAVED/SETT
+        columns:
+        - columnID: column1
+          text: Settings saved.
+        - columnID: column4
+          text: Impostazioni salvate.
+        - columnID: column3
+          text: "Param\xE8tres enregistr\xE9s."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_NO
+        pathTag: STR/NO
+        columns:
+        - columnID: column1
+          text: No
+        - columnID: column4
+          text: No
+        - columnID: column3
+          text: Non
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_NOT_CONNECT
+        pathTag: STR/NOT/CONNECT
+        columns:
+        - columnID: column1
+          text: Not Connected
+        - columnID: column4
+          text: Non connesso
+        - columnID: column3
+          text: "Non connect\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_NO_REPLAYS
+        pathTag: STR/NO/REPLAYS
+        columns:
+        - columnID: column1
+          text: No replays found.
+        - columnID: column4
+          text: No replays found.
+        - columnID: column3
+          text: No replays found.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_OFF
+        pathTag: STR/OFF
+        columns:
+        - columnID: column1
+          text: Off
+        - columnID: column4
+          text: Off
+        - columnID: column3
+          text: "D\xE9sactiv\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_OK
+        pathTag: STR/OK
+        columns:
+        - columnID: column1
+          text: Ok
+        - columnID: column4
+          text: Ok
+        - columnID: column3
+          text: OK
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PERFECT_LAP
+        pathTag: STR/PERFECT/LAP
+        columns:
+        - columnID: column1
+          text: Perfect Lap
+        - columnID: column4
+          text: Giro perfetto
+        - columnID: column3
+          text: Tour parfait
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PERF_2
+        pathTag: STR/PERF/2
+        columns:
+        - columnID: column1
+          text: Perfection 2
+        - columnID: column4
+          text: Perfezione 2
+        - columnID: column3
+          text: Perfection 2
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PLACE
+        pathTag: STR/PLACE
+        columns:
+        - columnID: column1
+          text: PLACE
+        - columnID: column4
+          text: POSTO
+        - columnID: column3
+          text: PLACE
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PREV_SKIN
+        pathTag: STR/PREV/SKIN
+        columns:
+        - columnID: column1
+          text: Prev Skin
+        - columnID: column4
+          text: Skin prec.
+        - columnID: column3
+          text: "Apparence pr\xE9c\xE9dente"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PROCEED
+        pathTag: STR/PROCEED
+        columns:
+        - columnID: column1
+          text: Proceed
+        - columnID: column4
+          text: Procedi
+        - columnID: column3
+          text: Continuer
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_PROG_SAVED
+        pathTag: STR/PROG/SAVED
+        columns:
+        - columnID: column1
+          text: Your progress has been saved.
+        - columnID: column4
+          text: I progressi di gioco sono stati salvati
+        - columnID: column3
+          text: "Votre progression est sauvegard\xE9e"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_REC
+        pathTag: STR/REC
+        columns:
+        - columnID: column1
+          text: Record
+        - columnID: column4
+          text: Record
+        - columnID: column3
+          text: Record
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RECORD
+        pathTag: STR/RECORD
+        columns:
+        - columnID: column1
+          text: NEW RECORD!
+        - columnID: column4
+          text: NUOVO RECORD!
+        - columnID: column3
+          text: NOUVEAU RECORD !
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_REFRESH
+        pathTag: STR/REFRESH
+        columns:
+        - columnID: column1
+          text: Refresh
+        - columnID: column4
+          text: Aggiorna
+        - columnID: column3
+          text: Actualiser
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_REPLAYS
+        pathTag: STR/REPLAYS
+        columns:
+        - columnID: column1
+          text: Replays
+        - columnID: column4
+          text: Replay
+        - columnID: column3
+          text: Ralentis
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RESTART_REPLAY
+        pathTag: STR/RESTART/REPLAY
+        columns:
+        - columnID: column1
+          text: Restart Replay
+        - columnID: column4
+          text: Rivedi replay
+        - columnID: column3
+          text: Recommmencer le ralenti
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RESUME
+        pathTag: STR/RESUME
+        columns:
+        - columnID: column1
+          text: Resume
+        - columnID: column4
+          text: Riprendi
+        - columnID: column3
+          text: Reprendre
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RETRY
+        pathTag: STR/RETRY
+        columns:
+        - columnID: column1
+          text: Retry
+        - columnID: column4
+          text: Riprova
+        - columnID: column3
+          text: "R\xE9-essayer"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_RP_COMPLETE
+        pathTag: STR/RP/COMPLETE
+        columns:
+        - columnID: column1
+          text: Replay Complete
+        - columnID: column4
+          text: Replay completo
+        - columnID: column3
+          text: "Ralenti termin\xE9"
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEARCH
+        pathTag: STR/SEARCH
+        columns:
+        - columnID: column1
+          text: Search
+        - columnID: column4
+          text: Cerca
+        - columnID: column3
+          text: Rechercher
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEARCHING
+        pathTag: STR/SEARCHING
+        columns:
+        - columnID: column1
+          text: Searching
+        - columnID: column4
+          text: Ricerca
+        - columnID: column3
+          text: Recherche en cours
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_CAR
+        pathTag: STR/SEL/CAR
+        columns:
+        - columnID: column1
+          text: Select Car
+        - columnID: column4
+          text: Scegli vettura
+        - columnID: column3
+          text: Choisir voiture
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_SEL_GEAR
+        pathTag: STR/SEL/GEAR
+        columns:
+        - columnID: column1
+          text: Select Transmission
+        - columnID: column4
+          text: Scegli trasmissione
+        - columnID: column3
+          text: Choisir transmission
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_TOPSPEED
+        pathTag: STR/TOPSPEED
+        columns:
+        - columnID: column1
+          text: TOP SPEED
+        - columnID: column4
+          text: "VELOCIT\xC0 MAX"
+        - columnID: column3
+          text: VITESSE MAX.
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_TRANS
+        pathTag: STR/TRANS
+        columns:
+        - columnID: column1
+          text: Transmission
+        - columnID: column4
+          text: Trasmissione
+        - columnID: column3
+          text: Transmission
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_UNLOCK
+        pathTag: STR/UNLOCK
+        columns:
+        - columnID: column1
+          text: You have unlocked %s.
+        - columnID: column4
+          text: Hai sbloccato %s.
+        - columnID: column3
+          text: "Vous avez d\xE9bloqu\xE9 %s."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_UNLOCK_PERF
+        pathTag: STR/UNLOCK/PERF
+        columns:
+        - columnID: column1
+          text: You have unlocked the Arcade Perfection mode.
+        - columnID: column4
+          text: "Hai sbloccato la modalit\xE0 Arcade Perfezione"
+        - columnID: column3
+          text: "Vous avez d\xE9bloqu\xE9 le mode Arcade Perfection."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_UNLOCK_SKIN
+        pathTag: STR/UNLOCK/SKIN
+        columns:
+        - columnID: column1
+          text: You have unlocked skin %s for the %s.
+        - columnID: column4
+          text: Hai sbloccato lo skin %s per la %s.
+        - columnID: column3
+          text: "Vous avez d\xE9bloqu\xE9 l'apparence %s pour la %s."
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_WAIT_FOR_PLAY
+        pathTag: STR/WAIT/FOR/PLAY
+        columns:
+        - columnID: column1
+          text: Waiting for other players
+        - columnID: column4
+          text: Aspettando altri giocatori
+        - columnID: column3
+          text: Attente d'autres joueurs
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_YES
+        pathTag: STR/YES
+        columns:
+        - columnID: column1
+          text: Yes
+        - columnID: column4
+          text: "S\xEC"
+        - columnID: column3
+          text: Oui
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_GAME_MODES
+        pathTag: STR/GAME/MODES
+        columns:
+        - columnID: column1
+          text: Game Modes
+        - columnID: column4
+          text: 
+        - columnID: column3
+          text: 
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_HOW_TO_PLAY
+        pathTag: STR/HOW/TO/PLAY
+        columns:
+        - columnID: column1
+          text: How to Play
+        - columnID: column4
+          text: 
+        - columnID: column3
+          text: 
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_INSTRUCTIONS
+        pathTag: STR/INSTRUCTIONS
+        columns:
+        - columnID: column1
+          text: Instructions
+        - columnID: column4
+          text: 
+        - columnID: column3
+          text: 
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+      - recordID: STR_OTHER_FEAT
+        pathTag: STR/OTHER/FEAT
+        columns:
+        - columnID: column1
+          text: Other Features
+        - columnID: column4
+          text: 
+        - columnID: column3
+          text: 
+        - columnID: column2
+          text: FALSE
+        - columnID: column5
+          text: 
+    - nameGrid: testGrid
+      gridID: mq5v321843np28
+      viewID: xpdl0z10dz949d
+      records:
+      - recordID: xpdl0z108z6949
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: 
+        - columnID: column3
+          text: 
+      - recordID: 12lm1pd1kpe8vz
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: 
+        - columnID: column3
+          text: 
+      - recordID: dx2yjz6jpz9lwj
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: 
+        - columnID: column3
+          text: 
+      - recordID: k6vokp5k1p403m
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: 
+        - columnID: column3
+          text: 
+      - recordID: 3pzon5dnl58q2k
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: 
+        - columnID: column3
+          text: 
+      - recordID: mq5v3k2wywwmjy
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: Pasta
+        - columnID: column3
+          text: 
+      - recordID: ed1ppl22pkljo1
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: Pasta
+        - columnID: column3
+          text: 
+      - recordID: v23w6vvex3l68o
+        pathTag: 
+        columns:
+        - columnID: testID
+          text: 
+        - columnID: column3
+          text: 
+      - recordID: mq5vw61nk24p28
+        pathTag: Demo
+        columns:
+        - columnID: testID
+          text: Pasta
+        - columnID: column3
+          text: 
+      - recordID: 44nzl3n2m505qm
+        pathTag: Demo/Demo2
+        columns:
+        - columnID: testID
+          text: Pasta
+        - columnID: column3
+          text: 
