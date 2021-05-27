@@ -3,26 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 namespace Gridly.Internal{ 
-    public static class GridlyUtility
+    public enum ColorDebug
     {
-        public static bool CheckOutput(this string output)
-        {
+        green,
+        red,
+        purple,
+        yellow
+    }
+    public static class GridlyUtilityEditor
+    {
 
-            if (output.Length == 0)
-            {
-                Debug.LogError("Something is wrong. Please check your key again");
-                EditorApplication.update = null;
-                
-                return false;
-            }
 
-            return true;
-        }
-
-        public static void Print(this object i)
-        {
-            Debug.Log(i);
-        }
 
         public static void Error(this object i)
         {
@@ -36,7 +27,12 @@ namespace Gridly.Internal{
             AssetDatabase.SaveAssets();
         }
 
-        //public static string test => ;
+        public static void setDirty(this Object i)
+        {
+            EditorUtility.SetDirty(i);
+        }
+
+        
     }
 
 }

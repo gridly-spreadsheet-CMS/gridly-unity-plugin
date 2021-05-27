@@ -3,51 +3,63 @@ using System.Collections.Generic;
 using UnityEngine;
 using Gridly;
 using UnityEngine.UI;
-
-public class GridlyPluginExample : MonoBehaviour
+namespace Gridly.Example
 {
-    public List<Languages> languagesSupport;
-    public Text[] texts;
-    public Text codeText;
-
-    Languages currentLanguage 
+    public class GridlyPluginExample : MonoBehaviour
     {
-        get => Project.singleton.targetLanguage;
-        set => Project.singleton.targetLanguage = value;
+        public static Text[] texts;
+        public Text codeText;
+
+        LangSupport currentLanguage
+        {
+            get => Project.singleton.targetLanguage;
+            set => Project.singleton.targetLanguage = value;
+        }
+
+        List<LangSupport> languagesSupport => Project.singleton.langSupports;
+
+        private void Start()
+        {
+            Refesh();
+        }
+
+        int index = 0;
+        public void NextLanguage()
+        {
+            index++;
+            if (index == languagesSupport.Count)
+                index = 0;
+
+            currentLanguage = languagesSupport[index];
+
+
+            Refesh();
+
+
+        }
+
+
+        public void PreviousLanguage()
+        {
+            index--;
+            if (index == -1)
+                index = languagesSupport.Count-1;
+
+            currentLanguage = languagesSupport[index];
+
+            Refesh();
+        }
+
+        void Refesh()
+        {
+            codeText.text = currentLanguage.languagesSuport.ToString();
+            TranslareText[] translareText = FindObjectsOfType<Translator>();
+            foreach(var i in translareText)
+            {
+                i.Refesh();
+            }
+            
+        }
+
     }
-
-    private void Start()
-    {
-        Refesh();
-    }
-    public void NextLanguage()
-    {
-        int index = languagesSupport.IndexOf(currentLanguage) + 1;
-        if (index == languagesSupport.Count)
-            index = 0;
-
-        currentLanguage = languagesSupport[index];
-
-        Refesh();
-    }
-
-
-    public void PreviousLanguage()
-    {
-        int index = languagesSupport.IndexOf(currentLanguage) - 1;
-        if (index == 0)
-            index = languagesSupport.Count - 1;
-        currentLanguage = languagesSupport[index];
-
-        Refesh();
-    }
-
-    void Refesh()
-    {
-        texts[0].text = "customer.gametexts.prev.1".GetStringData();
-        texts[1].text = "customer.gametexts.next.1".GetStringData();
-        texts[2].text = "customer.gametexts.cat.1".GetStringData();
-        codeText.text = Project.singleton.targetLanguage.ToString();
-    }
-
 }
