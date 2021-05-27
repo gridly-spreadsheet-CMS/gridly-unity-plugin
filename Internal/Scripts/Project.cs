@@ -22,7 +22,7 @@ namespace Gridly{
         static Project _singleton;
         public string ProjectID;
         private string chosenLangCodeName;
-        public LangSupport targetLanguage { 
+        public LangSupport targetLanguage {
             set { chosenLangCodeName = value.languagesSuport.ToString(); }
             get
             {
@@ -46,14 +46,14 @@ namespace Gridly{
         public List<LangSupport> langSupports;
 
         public static Project singleton {
-            get 
+            get
             {
                 Init();
-                return _singleton; 
+                return _singleton;
             }
-            set 
+            set
             {
-                
+
                 try
                 {
                     _singleton = value;
@@ -72,7 +72,19 @@ namespace Gridly{
 
 
         }
-
+        public int getIndexChosenLang {
+            get
+            {
+                int index = 0;
+                foreach(var i in langSupports)
+                {
+                    if (i.languagesSuport.ToString() == chosenLangCodeName)
+                        return index;
+                    index += 1;
+                }
+                return 0;
+            }
+        }
         public void SetChosenLanguageCode(string langCode)
         {
             chosenLangCodeName = langCode;
