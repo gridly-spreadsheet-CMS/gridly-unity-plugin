@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Gridly.Internal 
 {
-#if Gridly_UseSeparateData
-    [CreateAssetMenu(fileName = "New Record", menuName = "Gridly/Add New Record", order = 1)]
-#endif
+
     [System.Serializable]
     public class Record
-#if Gridly_UseSeparateData
-        : ScriptableObject
-#endif
     {
         public string recordID;
-        public string pathTag;
         public List<Column> columns = new List<Column>();
-
+        public string pathTag;
         public Record()
         {
 
+        }
+
+        public Record(Record record)
+        {
+            recordID = record.recordID;
+            foreach (var i in record.columns)
+                columns.Add(new Column(i.columnID,i.text));
         }
     }
 

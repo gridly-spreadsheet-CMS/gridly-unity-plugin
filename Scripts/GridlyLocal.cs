@@ -160,10 +160,9 @@ namespace Gridly
     {
 
         static string[] name;
-        static string[] sep;
         /// <summary>
         /// Get the text from local data || 
-        /// (Database name).(Grid name).(Record ID).(Column ID language index )
+        /// DatabaseName.GridName.RecordID)
         /// </summary>
         /// <returns>translated text with the current language</returns>
         public static string GetStringData(this string path)
@@ -171,31 +170,55 @@ namespace Gridly
             name = path.Split('.');
             try
             {
-                Record record = Project.singleton.databases.Find(x => x.databaseName == name[0])
-                .grids.Find(x => x.nameGrid == name[1])
-                .records.Find(x => x.recordID == name[2]);
+                return GetStingData(name[0], name[1], name[2]);
+            }
+            catch
+            {
+                Debug.LogError("the path should follow databaseName.GridName.RecordID");
+                return "";
+            }
+        }
 
-                foreach(var column in record.columns)
+
+        public static string GetStingData(string database, string grid, string recordID)
+        {
+            try
+            {
+                Record record = Project.singleton.databases.Find(x => x.databaseName == database)
+                .grids.Find(x => x.nameGrid == grid)
+                .records.Find(x => x.recordID == recordID);
+
+                
+
+                foreach (var column in record.columns)
                 {
-                    sep = column.columnID.Split('_');
-                    if(sep[0] == Project.singleton.targetLanguage.ToString() && name[3] == sep[1] )
+                    try
                     {
-                        return column.text;
+                        if (column.columnID == Project.singleton.targetLanguage.languagesSuport.ToString())
+                        {
+                            return column.text;
+                        }
+                    }
+                    catch // try to return other language if cant found target language
+                    {
+                        foreach(var i in Project.singleton.langSupports)
+                        {
+                            if (column.columnID == i.languagesSuport.ToString())
+                            {
+                                return column.text;
+                            }
+                        }
                     }
                 }
-                
-                
+
             }
-            catch(Exception e)
+            catch
             {
                 Debug.Log("Path does not exist. Please make sure you entered the correct path format, and added data");
             }
 
             return "";
         }
-
-
-
 
     }
 

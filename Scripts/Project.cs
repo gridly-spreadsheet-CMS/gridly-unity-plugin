@@ -2,26 +2,67 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Gridly.Internal;
+using TMPro;
 namespace Gridly{
 
-    //[CreateAssetMenu(fileName = "Project", menuName = "Gridly/Project", order = 1)]
-    public class Project: ScriptableObject
+    [System.Serializable]
+    public class LangSupport
     {
+        public Languages languagesSuport;
+        public string name;
         
+        public Font font;
+        public TMP_FontAsset tmFont;
+    }
+
+    //[CreateAssetMenu(fileName = "Project", menuName = "Gridly/Project", order = 1)]
+    public class Project : ScriptableObject
+    {
+
         static Project _singleton;
         public string ProjectID;
-        public Languages targetLanguage;
-        public List<Database> databases;
-        public static Project singleton {
-            get 
+        private string chosenLangCodeName;
+        public LangSupport targetLanguage {
+            set { chosenLangCodeName = value.languagesSuport.ToString(); }
+            get
             {
-                Init();
-                return _singleton; 
+                LangSupport _ = langSupports.Find(x => x.name == chosenLangCodeName);
+                try
+                {
+                    if (_ == null)
+                        return langSupports[0];
+                }
+                catch
+                {
+                    Debug.LogError("no supported language");
+                    return null;
+                }
+                return _;
             }
-            set 
+        }
+        [HideInInspector]
+        public List<Database> databases;
+        //[HideInInspector]
+        public List<LangSupport> langSupports;
+
+        public static Project singleton {
+            get
             {
                 Init();
-                _singleton = value; 
+                return _singleton;
+            }
+            set
+            {
+
+                try
+                {
+                    _singleton = value;
+                }
+                catch
+                {
+                    Init();
+                    _singleton = value;
+                }
             }
         }
         static void Init()
@@ -31,36 +72,31 @@ namespace Gridly{
 
 
         }
-
-
-
-
-        /// <summary>
-        /// Move to next language
-        /// </summary>
-        public void NextLanguage()
-        {
-            if (targetLanguage == Languages.zuZA)
-                targetLanguage = (Languages)(0);
-            else
+        public int getIndexChosenLang {
+            get
             {
-                targetLanguage = (Languages)((int)targetLanguage + 1);
+                int index = 0;
+                foreach(var i in langSupports)
+                {
+                    if (i.languagesSuport.ToString() == chosenLangCodeName)
+                        return index;
+                    index += 1;
+                }
+                return 0;
             }
         }
-
-        /// <summary>
-        /// Move previous language
-        /// </summary>
-        public void PreviousLanguage()
-        {
-            if (targetLanguage == Languages.arSA)
-                targetLanguage = Languages.zuZA;
-            else
-            {
-                targetLanguage = (Languages)((int)targetLanguage - 1);
-            }
+        public void SetChosenLanguageCode(string langCode)
+        { 
+            chosenLangCodeName = langCode;
+            TranslareText[] translareTexts = FindObjectsOfType<Translator>();
+            foreach (var i in translareTexts)
+                i.Refesh();
         }
-
+        public Internal.Grid getGrid(string dbName, string gridName)
+        {
+            Internal.Grid grid = databases.Find(x => x.databaseName == dbName).grids.Find(x => x.nameGrid == gridName);
+            return grid;
+        }
 
 
 
