@@ -45,7 +45,7 @@ namespace Gridly.Internal
         {
             string a = "[{\"id\": \"" + record.recordID + "\",\"path\": \"" + record.pathTag + "\",\"cells\": [" + GetCode(record) + "]}]";
 
-            //a.Print();
+            a.Print();
             byte[] data = Encoding.ASCII.GetBytes(a);
 
             DownloadHandler downloadHandler = new DownloadHandlerBuffer();
@@ -62,7 +62,8 @@ namespace Gridly.Internal
 
 
             string a = "[{\"id\": \"" + record.recordID + "\",\"path\": \"" + record.pathTag + "\",\"cells\": [" + GetCode(record) + "]}]";
-            byte[] data = Encoding.ASCII.GetBytes(a);
+            a.Print();
+            byte[] data = Encoding.UTF8.GetBytes(a);
 
 
             DownloadHandler downloadHandler = new DownloadHandlerBuffer();
