@@ -355,7 +355,7 @@ namespace Gridly.Internal
                 if(EditorUtility.DisplayDialog("Confirm delete", "Are you sure you want to delete this record", "Yes", "Cancel"))
                 {
                     EditorUtility.SetDirty(UserData.singleton);
-                    GridlyFunctionEditor.editor.AddRecord(record, grid.choesenViewID);
+                    GridlyFunctionEditor.editor.DeleteRecord(record.recordID, grid.choesenViewID, null);
                     grid.records.Remove(record);
                     Refesh();
                     Project.singleton.setDirty();
