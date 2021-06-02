@@ -101,9 +101,15 @@ namespace Gridly.Internal
             GUILayout.Space(10);
 
             GUILayout.BeginHorizontal();
+            EditorGUI.BeginChangeCheck();
             OnGUI_ToggleEnumBig("Gridly Setup", ref mCurrentViewMode, eViewMode.Setting, null, null);
             OnGUI_ToggleEnumBig("Languages", ref mCurrentViewMode, eViewMode.Languages, null, null);
             OnGUI_ToggleEnumBig("Sync Schedule", ref mCurrentViewMode, eViewMode.Schedule, null, null);
+            if (EditorGUI.EndChangeCheck())
+            {
+                m_Scroll = Vector3.zero;
+            }
+
             GUILayout.EndHorizontal();
 
             GUILayout.Space(10);
@@ -111,10 +117,15 @@ namespace Gridly.Internal
             if (mCurrentViewMode == eViewMode.Setting)
                 SettingWin();
             else if (mCurrentViewMode == eViewMode.Languages)
+            {
+            
                 LanguageWin();
+                
+            }
             else if (mCurrentViewMode == eViewMode.Schedule)
             {
-                if(Project.singleton.databases.Count == 0)
+              
+                if (Project.singleton.databases.Count == 0)
                 {
                     "you need to setup data before using this tab".Print();
                     mCurrentViewMode = eViewMode.Setting;
@@ -292,9 +303,11 @@ namespace Gridly.Internal
         float scrollHeight = 0;
         void ScheduleWin()
         {
-            EditorGUI.BeginChangeCheck();
+       
             if (!arrData.init)
                 Refesh();
+
+            EditorGUI.BeginChangeCheck();
             chosenDatabase = arrData.databaseArr[EditorGUILayout.Popup("Databases", arrData.indexDb, arrData.databaseArr)];
             if (EditorGUI.EndChangeCheck())
             {
