@@ -170,7 +170,7 @@ namespace Gridly
             name = path.Split('.');
             try
             {
-                return GetStingData(name[0], name[1], name[2]);
+                return GetStringData(name[0], name[1], name[2]);
             }
             catch
             {
@@ -178,9 +178,35 @@ namespace Gridly
                 return "";
             }
         }
+        public static string GetStringData(string database, string grid, string recordID, string columnID)
+        {
+            try
+            {
+                Record record = Project.singleton.databases.Find(x => x.databaseName == database)
+                .grids.Find(x => x.nameGrid == grid)
+                .records.Find(x => x.recordID == recordID);
 
+                
 
-        public static string GetStingData(string database, string grid, string recordID)
+                foreach (var column in record.columns)
+                {
+                    if (column.columnID == columnID)
+                    {
+
+                        return column.text;
+                    }
+
+                }
+
+            }
+            catch
+            {
+                Debug.Log("Path does not exist. Please make sure you entered the correct path format, and added data");
+            }
+
+            return "";
+        }
+        public static string GetStringData(string database, string grid, string recordID)
         {
             try
             {
