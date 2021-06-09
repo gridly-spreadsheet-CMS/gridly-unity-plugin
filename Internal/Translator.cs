@@ -37,13 +37,13 @@ namespace Gridly
         {
             if (textMeshPro != null)
             {
-                textMeshPro.text = GridlyLocal.GetStingData(database, grid, key);
+                textMeshPro.text = GridlyLocal.GetStringData(database, grid, key);
                 textMeshPro.font = Project.singleton.targetLanguage.tmFont;
             }
 
             if (text != null)
             {
-                text.text = GridlyLocal.GetStingData(database, grid, key);
+                text.text = GridlyLocal.GetStringData(database, grid, key);
                 text.font = Project.singleton.targetLanguage.font;
             }
 
