@@ -86,7 +86,7 @@ namespace Gridly.Internal
         }
 
 
-        [MenuItem("Tools/Gridly/Import/Gridly/Get Data From Gridly", false, 0)]
+        //[MenuItem("Tools/Gridly/Import/Gridly/Get Data From Gridly", false, 0)]
         private static void GetDataFromGridly()
         {
             GridlyFunctionEditor.editor.SetupDatabases();
@@ -436,7 +436,7 @@ namespace Gridly.Internal
 
         Texture2D m_logo;
         static GridlyArrData popupData= new GridlyArrData();
-        [MenuItem("Tools/Gridly/Import/Gridly/Data Editor", false, 2)]
+        //[MenuItem("Tools/Gridly/Import/Gridly/Data Editor", false, 2)]
         private static void Init()
         {
             DataEditor window = (DataEditor)GetWindow(typeof(DataEditor), true, "Gridly Data Editor - " + GridlyInfo.ver);
@@ -514,7 +514,7 @@ namespace Gridly.Internal
         static GridlyArrData arrData = new GridlyArrData();
 
         #endregion
-        [MenuItem("Tools/Gridly/Import/Gridly/ViewEditor", false, 49)]
+        //[MenuItem("Tools/Gridly/Import/Gridly/ViewEditor", false, 49)]
         private static void Init()
         {
             if (Project.singleton.databases.Count == 0)
