@@ -9,6 +9,10 @@
  
 -1.0.3 - 9/6/2021
   + remove some unnecessary feature
+  
+-1.0.4 - 9/7/2021
+ + remove database system
+ + custom view
 
 
 # GRIDLY PLUGIN
