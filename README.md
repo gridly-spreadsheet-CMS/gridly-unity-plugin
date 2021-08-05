@@ -15,13 +15,13 @@
  + custom view
 
 
-# GRIDLY PLUGIN
+# GRIDLY UNITY PLUGIN
 ​
 # What this plugin can do
-  This Plugin will connect Gridly and your Unity project to push and pull source language and target language texts between Gridly and Unity.
+  This Plugin will connect Gridly and your Unity project where you then can push and pull source language and target language texts between Gridly and Unity.
 
 # How to install
   Download the **GridlyPlugin.unitypackage** file and drag it into the project tab in Unity.
   
 # Documentation
-  You will find the plugin documentation in this folder Gridly/doc or via this [link](https://github.com/gridly-spreadsheet-CMS/gridly-unity-plugin/blob/master/Gridly/Doc/Unity%20plugin%20documentation.pdf)
+  You will find the plugin documentation in the folder /Gridly/doc or you can access it via this [link](https://github.com/gridly-spreadsheet-CMS/gridly-unity-plugin/blob/master/Gridly/Doc/Unity%20plugin%20documentation.pdf)
