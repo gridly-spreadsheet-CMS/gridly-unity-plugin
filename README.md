@@ -18,7 +18,7 @@
 # GRIDLY PLUGIN
 ​
 # What this plugin can do
-  This Plugin will integrate Gridly with Unity to easily push and pull source language and target language texts between Gridly and Unity.
+  This Plugin will connect Gridly and your Unity project to push and pull source language and target language texts between Gridly and Unity.
 
 # How to install
   Download the **GridlyPlugin.unitypackage** file and drag it into the project tab in Unity.
