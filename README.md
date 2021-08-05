@@ -17,6 +17,10 @@
 
 # GRIDLY PLUGIN
 ​
+# 0. How to install
+  download the GridlyPlugin.unitypackage file and drag it into the project tab in Unity
+
+
 # 1.  What this plugin can do
 ​
 This Plugin can help you get data from Gridly to Unity and turn it into local data, using the path you can get information based on the target language.
