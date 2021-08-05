@@ -18,12 +18,10 @@
 # GRIDLY PLUGIN
 ​
 # How to install
-  download the GridlyPlugin.unitypackage file and drag it into the project tab in Unity
+  Download the GridlyPlugin.unitypackage file and drag it into the project tab in Unity.
   
 # How to find the plugin documentation
-  You will find the plugin documentation in this folder Gridly/doc. <br/>
-  ​
-  or via this [link](https://docs.google.com/document/d/1aoUgzhqS1pTJHyTO2WBIrNB5pckqqPLSdJtWHUeBpYo/edit?fbclid=IwAR01L6Phs8an71qw0-gu17p4mr5Z0Y5l73O7Cy9X6h_twOGWNAxMCEVOXpk)
+  You will find the plugin documentation in this folder Gridly/doc or via this [link](https://docs.google.com/document/d/1aoUgzhqS1pTJHyTO2WBIrNB5pckqqPLSdJtWHUeBpYo/edit?fbclid=IwAR01L6Phs8an71qw0-gu17p4mr5Z0Y5l73O7Cy9X6h_twOGWNAxMCEVOXpk)
 
 ​
 ​
