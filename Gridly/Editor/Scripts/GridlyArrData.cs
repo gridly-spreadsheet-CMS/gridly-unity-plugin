@@ -39,12 +39,17 @@ namespace Gridly.Internal
 
         public int indexGrid;
         public int indexKey;
+        public string keyID;
+        public string searchKey;
+        public string chosenGridName => gridArr[indexGrid];
+
+
 
         public void RefeshAll(string gridname, string keyID) 
         {
             _init = true;
 
-
+            this.keyID = keyID;
             List<string> nameGrid = new List<string>();
             foreach (var i in Project.singleton.grids)
             {
@@ -58,7 +63,7 @@ namespace Gridly.Internal
                 indexGrid = GetIndex(gridname, gridArr);
             }
 
-            
+          
 
             if(grid != null)
             {
@@ -67,8 +72,14 @@ namespace Gridly.Internal
                 {
                     nameKey.Add(i.recordID);
                 }
-                if(nameKey.Count > 0)
-                    keyArr = nameKey.ToArray();
+
+                if (!string.IsNullOrEmpty(searchKey))
+                {
+                    nameKey = nameKey.FindAll(x => x.Contains(searchKey));
+                }
+
+
+                keyArr = nameKey.ToArray();
 
                 if (!string.IsNullOrEmpty(keyID))
                     indexKey = GetIndex(keyID, keyArr);
@@ -93,9 +104,6 @@ namespace Gridly.Internal
         }
 
 
-        public string searchKey;
-
-        public string chosenGridName => gridArr[indexGrid];
 
 
         public Grid grid
@@ -122,7 +130,7 @@ namespace Gridly.Internal
             {
                 try
                 {
-                    return grid.records[indexKey];
+                    return grid.records.Find(x => x.recordID == keyID);
                         
                 }
                 catch

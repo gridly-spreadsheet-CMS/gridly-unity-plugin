@@ -12,6 +12,7 @@ namespace Gridly.Internal
         GridlyArrData popupData = new GridlyArrData();
 
         static string search = "";
+        Column chosenColum;
         private void OnEnable()
         {
             search = "";
@@ -62,8 +63,6 @@ namespace Gridly.Internal
 
 
             //Key
-            if (popupData.keyArr == null)
-                return;
 
 
             GUILayout.Space(5);
@@ -71,20 +70,29 @@ namespace Gridly.Internal
             search = GUILayout.TextField(search, GUI.skin.GetStyle("ToolbarSeachTextField"));
             if (EditorGUI.EndChangeCheck())
             {
+                
                 popupData.searchKey = search;
                 Refesh();
             }
 
-            
+            if (popupData.keyArr == null)
+                return;
+
+
             GUILayout.Space(5);
             GUILayout.BeginHorizontal();
             GUILayout.Label("Key");
             EditorGUI.BeginChangeCheck();
-            translator.key = popupData.keyArr[EditorGUILayout.Popup(popupData.indexKey, popupData.keyArr)];
+            try
+            {
+                translator.key = popupData.keyArr[EditorGUILayout.Popup(popupData.indexKey, popupData.keyArr)];
+            }
+            catch { GUILayout.Label("can't find key"); }
             if (EditorGUI.EndChangeCheck())
             {
                 EditorUtility.SetDirty(translator);
                 Refesh();
+
             }
             GUILayout.EndHorizontal();
 
@@ -93,17 +101,38 @@ namespace Gridly.Internal
             try
             {
                 Languages main = UserData.singleton.mainLangEditor;
-                GUILayout.Label(main.ToString() + ": " + popupData.chosenRecord.columns.Find(x => x.columnID.Contains(main.ToString())).text);
+                GUILayout.BeginHorizontal();
+                GUILayout.Label(main.ToString() + ": ");
+                if (chosenColum != null)
+                {
+                    chosenColum.text = GUILayout.TextArea(chosenColum.text);
+                    if(GUILayout.Button(new GUIContent() {text = "Export" , tooltip = "Export text to Girdly" }, GUILayout.MinWidth(60)))
+                    {
+                        GridlyFunctionEditor.editor.UpdateRecordLang(popupData.chosenRecord, popupData.grid.choesenViewID, UserData.singleton.mainLangEditor);
+                    }
+                }
+    
+                GUILayout.EndHorizontal();
             }
             catch { }
 
 
         }
 
+        
+
         void Refesh()
         {
             Translator translator = (Translator)target;
             popupData.RefeshAll(translator.grid, translator.key);
+
+            try
+            {
+                Languages main = UserData.singleton.mainLangEditor;
+                chosenColum = popupData.chosenRecord.columns.Find(x => x.columnID == main.ToString());
+            }
+            catch { }
+            
         }
 
     }
