@@ -13,7 +13,9 @@
 -1.0.4 - 9/7/2021
  + remove database system
  + custom view
-
+ 
+- 1.0.5 - 21/8/2021
+  + added new edit field in component
 
 # GRIDLY UNITY PLUGIN
 
