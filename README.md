@@ -17,6 +17,14 @@
 - 1.0.5 - 21/8/2021
   + added new edit field in component
 
+- 1.0.6 - 7/10/2021
+  + Improved scrolling in the term editor window
+  + Added 2 top and bottom scrollable buttons
+  + Automatically add default font when adding new language
+  + Improve searchability
+  + Improved the text box containing the translations
+  
+
 # GRIDLY UNITY PLUGIN
 
 # What this plugin can do
