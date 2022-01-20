@@ -3,9 +3,9 @@
 # What this plugin can do
   This Plugin will push and pull source language and target language texts between a spreadsheet in Gridly and a project in Unity.
   
-  Gridly enables running localization projects in a spreadsheet structure with columns reprepresenting languages determined by record IDs. This plugin works only with Gridly, if you don't have an account, [sign up here](https://www.gridly.com/?utm_campaign=20211101_unity&utm_medium=github&utm_source=unity).
+  Gridly enables running localization projects in a spreadsheet structure with columns reprepresenting languages determined by record IDs. This plugin works only with Gridly, if you don't have an account, [sign up here](https://www.gridly.com/?utm_campaign=20211101_unity&utm_medium=web&utm_source=github).
   
-  [Watch a demo](https://www.gridly.com/integrations/unity/?utm_campaign=20211101_unity&utm_medium=github&utm_source=unity) how you can use this plugin and how to set it up. 
+  [Watch a demo](https://www.gridly.com/integrations/unity/?utm_campaign=20211101_unity&utm_medium=web&utm_source=github) how you can use this plugin and how to set it up. 
 
 # How to install
   Download the **GridlyPlugin.unitypackage** file and drag it into the project tab in Unity.
