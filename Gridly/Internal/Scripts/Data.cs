@@ -3,6 +3,7 @@ using UnityEngine;
 using System.IO;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
+
 namespace Gridly.Internal
 {
     public static class DataManager

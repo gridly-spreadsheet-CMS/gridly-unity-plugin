@@ -15,81 +15,56 @@ MonoBehaviour:
   ProjectID: 
   grids:
   - databaseID: 
-    nameGrid: Sync-Trig
+    nameGrid: locGame
     gridID: 
-    choesenViewID: '###'
-    records:
-    - recordID: hello
-      columns:
-      - columnID: enUS
-        text: hello word
-      - columnID: viVN
-        text: "xin ch\xE0o th\u1EBF gi\u1EDBi"
-      - columnID: frFR
-        text: Bonjour
-      objects: []
-      pathTag: 
-    - recordID: refesh
-      columns:
-      - columnID: enUS
-        text: refesh
-      - columnID: viVN
-        text: "l\xE0m m\u1EDBi"
-      - columnID: frFR
-        text: "rafra\xEEchir"
-      objects: []
-      pathTag: 
-  - databaseID: 
-    nameGrid: Example
-    gridID: 
-    choesenViewID: '###'
-    records:
-    - recordID: Next
-      columns:
-      - columnID: enUS
-        text: next
-      - columnID: frFR
-        text: 'suivant '
-      - columnID: viVN
-        text: "Ti\u1EBFp"
-      - columnID: file
-        text: 
-      objects: []
-      pathTag: 
-    - recordID: Pre
-      columns:
-      - columnID: enUS
-        text: previous
-      - columnID: frFR
-        text: "pr\xE9c\xE9dent "
-      - columnID: viVN
-        text: "Quay l\u1EA1i"
-      - columnID: file
-        text: 
-      objects: []
-      pathTag: 
-    - recordID: Hello
-      columns:
-      - columnID: enUS
-        text: Hello
-      - columnID: frFR
-        text: Bonjour
-      - columnID: viVN
-        text: xin chao
-      - columnID: file
-        text: 
-      objects: []
-      pathTag: 
+    choesenViewID: 4589nn4wyvpjqmn
+    records: []
   langSupports:
   - languagesSuport: 0
-    name: USA
-    font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    name: enUS
+    screenshotColumnId: enUS_Screenshot
+    font: {fileID: 0}
     tmFont: {fileID: 0}
-  - languagesSuport: 141
-    name: vietnam
-    font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  - languagesSuport: 5
+    name: deDE
+    screenshotColumnId: deDE_Screenshot
+    font: {fileID: 0}
     tmFont: {fileID: 0}
-  - languagesSuport: 2
-    name: frFR
-    font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  - languagesSuport: 9
+    name: plPL
+    screenshotColumnId: plPL_Screenshot
+    font: {fileID: 0}
     tmFont: {fileID: 0}
+  - languagesSuport: 10
+    name: ptBR
+    screenshotColumnId: 
+    font: {fileID: 0}
+    tmFont: {fileID: 0}
+  LangsToTakeScreenshotList:
+  - ptBR
+  - plPL
+  LastSelectedLangIndexToAdd: 2
+  LastSelectedLangIndexToRemove: 0
+  DataToSend:
+  - Source text
+  - Source text and screenshots
+  - enUS
+  - deDE
+  - plPL
+  - ptBR
+  DataToSendSelectedItems:
+  - deAT
+  - plPL
+  - ptBR
+  - arAE
+  - cyGB
+  - enAU
+  - azAZ
+  - arKW
+  - enCA
+  - enZA
+  - arIQ
+  - bsBA
+  - csCZ
+  - deDE
+  SendIfChanged: 0

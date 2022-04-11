@@ -31,8 +31,6 @@ namespace Gridly.Example
                 index = 0;
             
             currentLanguage = languagesSupport[index];
-            //Debug.Log(languagesSupport[index].languagesSuport.ToString() +" "+ currentLanguage.languagesSuport.ToString());
-
             Refesh();
 
 
@@ -52,7 +50,7 @@ namespace Gridly.Example
 
         void Refesh()
         {
-            codeText.text = currentLanguage.languagesSuport.ToString();
+            //codeText.text = currentLanguage.languagesSuport.ToString();
             TranslareText[] translareText = FindObjectsOfType<Translator>();
             foreach(var i in translareText)
             {

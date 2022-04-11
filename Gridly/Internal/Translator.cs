@@ -44,8 +44,8 @@ namespace Gridly
                 text.font = Project.singleton.targetLanguage.font;
             }
 
-            if (text == null && textMeshPro == null)
-                Debug.LogWarning("text,textMeshPro fields is empty " + gameObject.name);
+            if (text == null && textMeshPro == null) { }
+                //Debug.LogWarning("text,textMeshPro fields is empty " + gameObject.name);
 
         }
     }

@@ -1,7 +1,7 @@
 using UnityEngine.Networking;
 using System;
 using UnityEngine;
-
+using System.Threading.Tasks;
 
 namespace Gridly.Internal
 {
@@ -61,7 +61,7 @@ namespace Gridly.Internal
             {
                 if (i.choesenViewID == "###")
                     continue;
-                i.records.Clear();
+                i.records.Clear(); //COMMENTED
                 SetupRecords(i, 0);
             }
         }
@@ -78,13 +78,13 @@ namespace Gridly.Internal
         static int step = 1000;
 
 
-        public void SetupRecords(Grid grid, int page)
+        public async void SetupRecords(Grid grid, int page)
         {
             
             int nprocess = 2; //download 2k record
             for (int i = 0 + page; i < nprocess + page; i++)
             {
-                SetupRecords(grid, i, i == (nprocess + page) - 1);
+                await SetupRecords(grid, i, i == (nprocess + page) - 1);
             }
             
         }
@@ -97,7 +97,7 @@ namespace Gridly.Internal
             dowloadedTotal = 0;
         }
 
-        public void SetupRecords(Grid grid, int page, bool autoDowload)
+        public async Task SetupRecords(Grid grid, int page, bool autoDowload)
         {
             if (grid == null)
                 return;
@@ -107,9 +107,11 @@ namespace Gridly.Internal
             UnityWebRequest unityWeb = UnityWebRequest.Get(GetRecordPage(grid.choesenViewID, page));
             unityWeb.SetRequestHeader("Authorization", "ApiKey " + UserData.singleton.keyAPI);
             unityWeb.SendWebRequest();
-            
-            void action()
-            {
+
+            while (!unityWeb.isDone)
+                await Task.Yield();
+
+                Debug.Log(unityWeb.isDone);
                 if (unityWeb.isDone)
                 {
                     dowloadn += 1;
@@ -188,10 +190,7 @@ namespace Gridly.Internal
                         
                     }
                 }
-            }
-
-
-            CancelWhenDone(action, unityWeb);
+           
 
 
         }

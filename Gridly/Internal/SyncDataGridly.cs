@@ -5,6 +5,10 @@ using Gridly;
 using Gridly.Internal;
 using System;
 using UnityEngine.Events;
+using UnityEditor;
+using System.IO;
+using System.Threading.Tasks;
+
 //[ExecuteAlways]
 namespace Gridly
 {
@@ -56,7 +60,9 @@ namespace Gridly
             }
 
 
-            gridlyFunction.SetupDatabases();
+            //gridlyFunction.SetupDatabases();
+
+            
 
 
             //apply new data when finish setup userlocal
@@ -73,6 +79,18 @@ namespace Gridly
         {
             GridlyFunction.process?.Invoke();
 
+        }
+
+              
+
+        private static List<string> getSceneNames()
+        {
+            List<string> names = new List<string>();
+            foreach (EditorBuildSettingsScene scene in EditorBuildSettings.scenes)
+            {
+                names.Add(Path.GetFileNameWithoutExtension(scene.path));
+            }
+            return names;
         }
     }
 

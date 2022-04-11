@@ -33,9 +33,17 @@ namespace Gridly.Internal
 				Init();
 				return _singleton;
 			}
-			  
+			
 		}
 
+
+		[SerializeField]
+		private string _screenshotPath = "";
+		public string screenshotPath { get => _screenshotPath.Decrypt(); set => _screenshotPath = value.Enrypt(); }
+
+		[SerializeField]
+		private bool _uploadImages = false;
+		public bool uploadImages { get => _uploadImages; set => _uploadImages = value; }
 
 		[SerializeField]
 		private string _keyAPI = "";

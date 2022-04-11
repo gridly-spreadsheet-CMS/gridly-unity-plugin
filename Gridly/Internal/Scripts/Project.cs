@@ -11,10 +11,12 @@ namespace Gridly
     {
         public Languages languagesSuport;
         public string name;
+        public string screenshotColumnId;
 
         public Font font;
         public TMP_FontAsset tmFont;
     }
+
 
     //[CreateAssetMenu(fileName = "Project", menuName = "Gridly/Project", order = 1)]
     public class Project : ScriptableObject
@@ -23,9 +25,11 @@ namespace Gridly
         static Project _singleton;
         public string ProjectID;
 
+
         private string chosenLangCodeName;
         public LangSupport targetLanguage
         {
+
             set { chosenLangCodeName = value.languagesSuport.ToString(); }
             get
             {
@@ -51,6 +55,19 @@ namespace Gridly
         public List<Gridly.Internal.Grid> grids;
         //[HideInInspector]
         public List<LangSupport> langSupports;
+        [HideInInspector]
+        public List<string> LangsToTakeScreenshotList;
+        [HideInInspector]
+        public int LastSelectedLangIndexToAdd = 0;
+        [HideInInspector]
+        public int LastSelectedLangIndexToRemove = 0;
+        [HideInInspector]
+        public List<string> DataToSend;
+        [HideInInspector]
+        public List<string> DataToSendSelectedItems;
+        [HideInInspector]
+        public bool SendIfChanged = false;
+
 
         public Internal.Grid GetGrid(string name)
         {
@@ -80,8 +97,11 @@ namespace Gridly
         }
         static void Init()
         {
+
+
             if (_singleton == null)
                 _singleton = Resources.Load<Project>("Project");
+
 
 
         }

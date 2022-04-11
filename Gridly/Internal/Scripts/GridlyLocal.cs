@@ -171,6 +171,11 @@ namespace Gridly
         {
             try
             {
+                /*
+                Debug.Log("gridId: " + grid + " recordID: " + recordID);
+                Debug.Log(Project.singleton.grids[0].nameGrid);
+                Debug.Log(Project.singleton.grids[0].records.Count);
+                */
                 Record record = Project.singleton
                 .grids.Find(x => x.nameGrid == grid)
                 .records.Find(x => x.recordID == recordID);
