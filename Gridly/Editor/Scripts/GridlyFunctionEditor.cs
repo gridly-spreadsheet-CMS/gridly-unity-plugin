@@ -7,7 +7,6 @@ using System.Text;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Collections;
-using Unity.EditorCoroutines.Editor;
 using Newtonsoft.Json;
 using System.Linq;
 
@@ -34,8 +33,7 @@ namespace Gridly.Internal
                     webRequest.SetRequestHeader("Authorization", "ApiKey " + UserData.singleton.keyAPI);
                     // Request and wait for the desired page.
                     var req = webRequest.SendWebRequest();
-
-                    var waitForOneSecond = new EditorWaitForSeconds(3.0f);
+                                   
 
                     while (!req.isDone)
                         await Task.Yield();
@@ -283,8 +281,6 @@ namespace Gridly.Internal
                 webRequest.SetRequestHeader("Authorization", "ApiKey " + UserData.singleton.keyAPI);
                 // Request and wait for the desired page.
                 var req = webRequest.SendWebRequest();
-
-                var waitForOneSecond = new EditorWaitForSeconds(3.0f);
 
                 while (!req.isDone)
                     await Task.Yield();

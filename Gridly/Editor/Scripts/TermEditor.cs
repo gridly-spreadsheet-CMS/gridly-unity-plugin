@@ -66,7 +66,7 @@ namespace Gridly.Internal
 
             Project.singleton.DataToSend.Clear();
             Project.singleton.DataToSend.Add("Source text");
-            Project.singleton.DataToSend.Add("Source text and screenshots");            
+            Project.singleton.DataToSend.Add("Source text and screenshots");
 
             foreach (LangSupport lang in Project.singleton.langSupports)
             {
@@ -303,6 +303,14 @@ namespace Gridly.Internal
             GenericMenu menu = new GenericMenu();
             menu.AddItem(new GUIContent("Language screenshots/All target language screenshots"), Project.singleton.DataToSendSelectedItems.Contains("All target language screenshots"), OnColorSelected, "All target language screenshots");
 
+            foreach (string data in Project.singleton.DataToSendSelectedItems.ToList())
+            {
+                if (!Project.singleton.DataToSend.Contains(data))
+                {
+                    Project.singleton.DataToSendSelectedItems.Remove(data);
+                }
+            }
+
             foreach (string item in Project.singleton.DataToSend)
             {
                 if (item.Length > 4)
@@ -330,11 +338,11 @@ namespace Gridly.Internal
             if (GUILayout.Button(new GUIContent() { text = "Push data", tooltip = "Push source strings and screenshots with selected languages to Grdily" }))
             {
                 string msg = "You are going to push data with these settings:\n";
-                foreach(string data in Project.singleton.DataToSendSelectedItems)
+                foreach (string data in Project.singleton.DataToSendSelectedItems)
                 {
                     if (data.Length == 4)
                     {
-                        if(!Project.singleton.DataToSendSelectedItems.Contains("All target language screenshots"))
+                        if (!Project.singleton.DataToSendSelectedItems.Contains("All target language screenshots"))
                             msg += "- " + data + " screenshots" + "\n";
                     }
                     else
@@ -352,7 +360,7 @@ namespace Gridly.Internal
             GUILayout.BeginHorizontal();
             EditorGUI.BeginChangeCheck();
             GUILayout.FlexibleSpace();
-            Project.singleton.SendIfChanged = GUILayout.Toggle(Project.singleton.SendIfChanged, new GUIContent { text = "Push only changed records", tooltip = "Send records that has been changed in Unity to Gridly."});
+            Project.singleton.SendIfChanged = GUILayout.Toggle(Project.singleton.SendIfChanged, new GUIContent { text = "Push only changed records", tooltip = "Send records that has been changed in Unity to Gridly." });
             if (EditorGUI.EndChangeCheck())
                 Project.singleton.setDirty();
             GUILayout.EndHorizontal();
@@ -366,14 +374,27 @@ namespace Gridly.Internal
         {
             string selectedText = selectedDataItem.ToString();
 
-            if(selectedText.Length == 4 && Project.singleton.DataToSendSelectedItems.Contains("All target language screenshots"))
+            if (selectedText.Length == 4 && Project.singleton.DataToSendSelectedItems.Contains("All target language screenshots"))
             {
                 Project.singleton.DataToSendSelectedItems.Remove("All target language screenshots");
             }
 
-            if(selectedText == "All target language screenshots")
+            if (selectedText == "All target language screenshots")
             {
-                if (Project.singleton.DataToSendSelectedItems.Contains(selectedText))
+                bool allLangAdded = true;
+                foreach (LangSupport lang in Project.singleton.langSupports)
+                {
+
+                    if (lang.name != UserData.singleton.mainLangEditor.ToString())
+                    {
+                        if (!Project.singleton.DataToSendSelectedItems.Contains(lang.name))
+                        {
+                            allLangAdded = false;
+                        }
+                    }
+                }
+
+                if (allLangAdded)
                 {
                     foreach (LangSupport lang in Project.singleton.langSupports)
                     {
@@ -382,19 +403,24 @@ namespace Gridly.Internal
                             Project.singleton.DataToSendSelectedItems.Remove(lang.name);
                         }
                     }
+
                 }
                 else
                 {
                     foreach (LangSupport lang in Project.singleton.langSupports)
                     {
-                        if (!Project.singleton.DataToSendSelectedItems.Contains(lang.name))
+                        if (lang.name != UserData.singleton.mainLangEditor.ToString())
                         {
-                            Project.singleton.DataToSendSelectedItems.Add(lang.name);
+                            if (!Project.singleton.DataToSendSelectedItems.Contains(lang.name))
+                            {
+                                Project.singleton.DataToSendSelectedItems.Add(lang.name);
+                            }
                         }
                     }
                 }
+
             }
-            
+
             Debug.Log(selectedText);
 
             if (Project.singleton.DataToSendSelectedItems.Contains(selectedText))
@@ -406,7 +432,7 @@ namespace Gridly.Internal
                 Project.singleton.DataToSendSelectedItems.Add(selectedText);
             }
 
-            if(!Project.singleton.DataToSendSelectedItems.Where(d => d.Contains("Source")).Any())
+            if (!Project.singleton.DataToSendSelectedItems.Where(d => d.Contains("Source")).Any())
             {
                 Project.singleton.DataToSendSelectedItems.Remove(UserData.singleton.mainLangEditor.ToString());
             }

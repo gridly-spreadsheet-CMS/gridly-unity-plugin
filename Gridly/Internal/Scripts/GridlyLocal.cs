@@ -171,8 +171,9 @@ namespace Gridly
         {
             try
             {
-                /*
+                
                 Debug.Log("gridId: " + grid + " recordID: " + recordID);
+                /*
                 Debug.Log(Project.singleton.grids[0].nameGrid);
                 Debug.Log(Project.singleton.grids[0].records.Count);
                 */
@@ -206,9 +207,9 @@ namespace Gridly
                 }
 
             }
-            catch
+            catch(Exception ex)
             {
-                Debug.Log("Path does not exist. Please make sure you entered the correct path format, and added data");
+                Debug.Log("Path does not exist. Please make sure you entered the correct path format, and added data" + ex.Message);
             }
 
             return "";

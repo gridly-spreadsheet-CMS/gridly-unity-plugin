@@ -15,19 +15,198 @@ MonoBehaviour:
   ProjectID: 
   grids:
   - databaseID: 
-    nameGrid: locGame
+    nameGrid: Localization Game
     gridID: 
     choesenViewID: 4589nn4wyvpjqmn
-    records: []
+    records:
+    - recordID: btn_play
+      columns:
+      - columnID: enUS
+        text: Play
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: "bawi\u0107 si\u0119"
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: 
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: Abspielen
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: MainScene
+    - recordID: btn_settings
+      columns:
+      - columnID: enUS
+        text: Settings
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: ustawienia
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: PT SETTINGs
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: Einstellungen
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: MainScene
+    - recordID: btn_exit
+      columns:
+      - columnID: enUS
+        text: Exit
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: "Wyj\u015Bcie"
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: 
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: Ende
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: MainScene
+    - recordID: btn_back
+      columns:
+      - columnID: enUS
+        text: Back
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: plecy
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: PT BACK
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: "Zur\xFCck"
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: MainScene
+    - recordID: btn_peak
+      columns:
+      - columnID: enUS
+        text: Peak
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: 
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: PT PEAK
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: 
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: SettingsScene
+    - recordID: btn_lean
+      columns:
+      - columnID: enUS
+        text: LEAN
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: 
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: PT LEAN
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: 
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: SettingsScene
+    - recordID: btn_empty
+      columns:
+      - columnID: enUS
+        text: Empty
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: 
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: 
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: 
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: SettingsScene
+    - recordID: lb_test
+      columns:
+      - columnID: enUS
+        text: label test
+      - columnID: enUS_Screenshot
+        text: 
+      - columnID: plPL
+        text: 
+      - columnID: plPL_Screenshot
+        text: 
+      - columnID: ptBR
+        text: 
+      - columnID: ptBR_Screenshot
+        text: 
+      - columnID: itIT
+        text: 
+      - columnID: itIT_Screenshot
+        text: 
+      - columnID: deDE
+        text: 
+      - columnID: deDE_Screenshot
+        text: 
+      pathTag: SettingsScene
   langSupports:
   - languagesSuport: 0
     name: enUS
     screenshotColumnId: enUS_Screenshot
-    font: {fileID: 0}
-    tmFont: {fileID: 0}
-  - languagesSuport: 5
-    name: deDE
-    screenshotColumnId: deDE_Screenshot
     font: {fileID: 0}
     tmFont: {fileID: 0}
   - languagesSuport: 9
@@ -37,34 +216,35 @@ MonoBehaviour:
     tmFont: {fileID: 0}
   - languagesSuport: 10
     name: ptBR
-    screenshotColumnId: 
+    screenshotColumnId: ptBR_Screenshot
+    font: {fileID: 0}
+    tmFont: {fileID: 0}
+  - languagesSuport: 6
+    name: itIT
+    screenshotColumnId: itIT_Screenshot
+    font: {fileID: 0}
+    tmFont: {fileID: 0}
+  - languagesSuport: 5
+    name: deDE
+    screenshotColumnId: deDE_Screenshot
     font: {fileID: 0}
     tmFont: {fileID: 0}
   LangsToTakeScreenshotList:
-  - ptBR
   - plPL
-  LastSelectedLangIndexToAdd: 2
+  - ptBR
+  - itIT
+  - enUS
+  - deDE
+  LastSelectedLangIndexToAdd: 0
   LastSelectedLangIndexToRemove: 0
   DataToSend:
   - Source text
   - Source text and screenshots
   - enUS
-  - deDE
   - plPL
   - ptBR
+  - itIT
+  - deDE
   DataToSendSelectedItems:
-  - deAT
-  - plPL
-  - ptBR
-  - arAE
-  - cyGB
-  - enAU
-  - azAZ
-  - arKW
-  - enCA
-  - enZA
-  - arIQ
-  - bsBA
-  - csCZ
-  - deDE
+  - Source text
   SendIfChanged: 0
