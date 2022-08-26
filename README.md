@@ -26,7 +26,12 @@ country letters should be capitalized:
 </p>
 
 ### 3. Connect Unity to Gridly
-### 3.1 Setup in Unity
+### 3.1 Plugin install steps
+- Download the code from GitHub
+- Unzip the package
+- Copy the Gridly folder into your project assets folder
+
+### 3.2 Setup in Unity
 First you need to open the Gridly settings window by going to:
 **Tools**->**Gridly**->**Setup Setting**  
 <p align="center">
@@ -50,7 +55,7 @@ You can add a new view by clicking on the plus icon
 <img src="resources/add_new_view.png"/>
 </p>
 
-### 3.2 Maintain languages in the plugin
+### 3.3 Maintain languages in the plugin
 * You can add a language by selecting a language from the list and clicking on the "Add" button. Adding a language to your project will then create a column for this language in Gridly
 <p align="center">
 <img src="resources/lang_selectLang.png"/>
