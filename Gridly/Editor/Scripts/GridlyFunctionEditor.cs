@@ -319,6 +319,16 @@ namespace Gridly.Internal
             string columnId = GetColumnId(records[0], UserData.singleton.mainLangEditor);
             List<GridlyRecord.Records> sourceColumn = await getSourceColumn(viewID, columnId);
 
+            foreach(Record rec in records.ToList())
+            {
+                foreach(Column col in rec.columns.ToList())
+                {
+                    if (col.text.Contains("\""))
+                    {
+                        col.text = col.text.Replace("\"", "\\\"");
+                    }
+                }
+            }
 
             int recordsToSend = 0;
 
@@ -432,6 +442,17 @@ namespace Gridly.Internal
             }
 
             a += "]";
+            
+            foreach (Record rec in records.ToList())
+            {
+                foreach (Column col in rec.columns.ToList())
+                {
+                    if (col.text.Contains("\\\""))
+                    {
+                        col.text = col.text.Replace("\\\"", "\"");
+                    }
+                }
+            }
 
             //a.Print();
             if (recordsToSend > 0)
